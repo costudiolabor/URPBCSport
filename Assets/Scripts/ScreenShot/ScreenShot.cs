@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ScreenShot : MonoBehaviour {
     //public void GetScreenShot(Action<Texture2D> doneEvent) => StartCoroutine(Take(doneEvent));
+    [SerializeField] private AudioSource audioSource;
     public void GetScreenShot(Action doneEvent) => StartCoroutine(Take(doneEvent));
     
     private IEnumerator Take(Action doneEvent){
         Debug.Log("StartSnapshot");
+        audioSource.Play();
         yield return new WaitForEndOfFrame();
         ScreenCapture.CaptureScreenshot("Screenshot.png");
         doneEvent?.Invoke();

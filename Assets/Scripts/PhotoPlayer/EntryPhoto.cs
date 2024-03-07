@@ -5,19 +5,16 @@ using UnityEngine.XR.ARFoundation;
 
 public class EntryPhoto : MonoBehaviour {
     [SerializeField] private Main main;
-    //[SerializeField] private ARContent arContent;
+    [SerializeField] private ARContent arContent;
     [SerializeField] private FinderTarget finderTarget; 
     [SerializeField] private Poses poses;
     [SerializeField] private Avatars avatars;
     [SerializeField] private ScreenShot screenShot;
-    [SerializeField] private RawImage rawImage;
-    [SerializeField] private ARRaycastManager arRaycastManager;
-    //private void Awake() { 
+    
     private void Start() { 
        Screen.sleepTimeout = SleepTimeout.NeverSleep;
        main.CreateView();
        main.Initialize();
-       //arContent.CreateView();
        
        avatars.CreateViewClosed();
        avatars.Initialize();
@@ -25,8 +22,7 @@ public class EntryPhoto : MonoBehaviour {
        poses.CreateViewClosed();
        poses.Initialize();
        
-       //ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
-       //ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
+       ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
        finderTarget.CreateView();
        finderTarget.SetRayCastManager(arRaycastManager);
        finderTarget.Initialize();
@@ -38,8 +34,8 @@ public class EntryPhoto : MonoBehaviour {
         avatars.SetPositionPlayer(position);
         avatars.Open();
         
-        //arContent.DisableARPlaneManager();
-        //arContent.DisableARRayCastManager();
+        arContent.DisableARPlaneManager();
+        arContent.DisableARRayCastManager();
         
         finderTarget.Close();
         poses.Open();

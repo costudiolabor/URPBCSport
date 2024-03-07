@@ -3,17 +3,20 @@ using UnityEngine.XR.ARFoundation;
 
 public class EntryPenalty : MonoBehaviour {
     [SerializeField] private Main main;
+    [SerializeField] private ScoreInfo scoreInfo;
     [SerializeField] private ARContent arContent;
     [SerializeField] private FinderTarget finderTarget;
     [SerializeField] private Gate gate;
     
-    private Kicker kicker = new Kicker();
+    private readonly Kicker _kicker = new Kicker();
     private void Awake() { 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         main.CreateView();
         main.Initialize();
         
-        arContent.CreateView();
+        scoreInfo.CreateView();
+        scoreInfo.Initialize();
+        
         ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
         
         finderTarget.CreateView();
@@ -34,23 +37,29 @@ public class EntryPenalty : MonoBehaviour {
         arContent.DisableARRayCastManager();
         finderTarget.Close();
         
-        kicker.Initialize();
-        kicker.UpButtonEvent += OnUpButton;
+        _kicker.Initialize();
+        _kicker.UpButtonEvent += OnUpButton;
     }
     
     private void OnUpButton(Vector2 direction, float distance) {
         gate.MoveKick(direction, distance);
     }
 
+    private void Goal() {
+        scoreInfo.SetGoal();
+    }
+    
     private void Subscribe() {
         finderTarget.SetPositionEvent += SetPositionObject;
+        gate.GoalEvent += Goal;
     }  
     
     private void UnSubscribe() {
         main.UnSubscribe();
         finderTarget.SetPositionEvent -= SetPositionObject;
-        kicker.UpButtonEvent -= OnUpButton;
-        kicker.UnSubscribe();
+        gate.GoalEvent -= Goal;
+        _kicker.UpButtonEvent -= OnUpButton;
+        _kicker.UnSubscribe();
         gate.UnSubscribe();
     }
     

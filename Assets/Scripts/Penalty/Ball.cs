@@ -5,7 +5,9 @@ public class Ball : MonoBehaviour {
     [SerializeField] private float maxSpeedBall = 1.0f;
     [SerializeField] private float timeLife = 10.0f;
     private Coroutine _coroutine;
+    public bool isActive = true;
     
+
     public void Kick(Vector2 direction, float power) {
         var speedBall = maxSpeedBall * power;
         var thisTransform = transform;
