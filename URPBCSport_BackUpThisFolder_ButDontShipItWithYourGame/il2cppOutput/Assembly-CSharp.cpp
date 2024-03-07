@@ -111,8 +111,6 @@ struct List_1_t74F984FDD52534B06C6A3E114E494CACC9BF8868;
 struct UnityAction_1_t8EC357AF4FBD2A0C4A575C4BBD0B3A81029E43A9;
 // UnityEngine.Events.UnityEvent`1<System.Boolean>
 struct UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB;
-// ViewOperator`1<ARContentView>
-struct ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A;
 // ViewOperator`1<AvatarsView>
 struct ViewOperator_1_t284681DD7AFF9D0094B6699F2D2EB370A93581C0;
 // ViewOperator`1<FinderTargetView>
@@ -547,7 +545,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_m28E47ABF7EA73AE7F8D16
 IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_m76E7BFC2A1BC6ADE41263A3AF4FA35073DE646C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_m7DF415BCE5D107806B2DFBD8ECC4F83862663257_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_m8E18A6255BE7AA5D932DAB8F3ABF46236FAE7420_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_mC70EE1EA99448F28C6FDBECC756D703D57008213_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_mC9ED12ECCFA3B66D6355FEBBA416E04EB3B07E2B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ViewOperator_1__ctor_mDCB420501619F6A9C7FFC768FA90E69C074DD832_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
@@ -653,17 +650,6 @@ struct List_1_t74F984FDD52534B06C6A3E114E494CACC9BF8868  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-// ViewOperator`1<ARContentView>
-struct ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A  : public RuntimeObject
-{
-	// TPrefab ViewOperator`1::prefab
-	ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* ___prefab_0;
-	// UnityEngine.Transform ViewOperator`1::viewParent
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___viewParent_1;
-	// TPrefab ViewOperator`1::view
-	ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* ___view_2;
-};
-
 // ViewOperator`1<AvatarsView>
 struct ViewOperator_1_t284681DD7AFF9D0094B6699F2D2EB370A93581C0  : public RuntimeObject
 {
@@ -728,6 +714,15 @@ struct ViewOperator_1_t9A34BE16AD9C17C1E2A62ADD2A1A8FA0D0B711B7  : public Runtim
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___viewParent_1;
 	// TPrefab ViewOperator`1::view
 	PosesView_tE4EBB5573D7B935794FA9C89E552F15F5853D9A9* ___view_2;
+};
+
+// ARContent
+struct ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33  : public RuntimeObject
+{
+	// UnityEngine.XR.ARFoundation.ARPlaneManager ARContent::arPlaneManager
+	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___arPlaneManager_0;
+	// UnityEngine.XR.ARFoundation.ARRaycastManager ARContent::arRaycastManager
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___arRaycastManager_1;
 };
 
 // Controls
@@ -1028,11 +1023,6 @@ struct UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB  : public UnityEve
 {
 	// System.Object[] UnityEngine.Events.UnityEvent`1::m_InvokeArray
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
-};
-
-// ARContent
-struct ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33  : public ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A
-{
 };
 
 // UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs
@@ -2380,18 +2370,18 @@ struct EntryPhoto_tCB8C5A4BB546AD6A491A1844A63AE6A9F73C7751  : public MonoBehavi
 {
 	// Main EntryPhoto::main
 	Main_t6125012C4D88701077DD3C4660130C5535730E1E* ___main_4;
+	// ARContent EntryPhoto::arContent
+	ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* ___arContent_5;
 	// FinderTarget EntryPhoto::finderTarget
-	FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* ___finderTarget_5;
+	FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* ___finderTarget_6;
 	// Poses EntryPhoto::poses
-	Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* ___poses_6;
+	Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* ___poses_7;
 	// Avatars EntryPhoto::avatars
-	Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* ___avatars_7;
+	Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* ___avatars_8;
 	// ScreenShot EntryPhoto::screenShot
-	ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5* ___screenShot_8;
+	ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5* ___screenShot_9;
 	// UnityEngine.UI.RawImage EntryPhoto::rawImage
-	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___rawImage_9;
-	// UnityEngine.XR.ARFoundation.ARRaycastManager EntryPhoto::arRaycastManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___arRaycastManager_10;
+	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___rawImage_10;
 	// System.Action EntryPhoto::DoneScreenShotEvent
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___DoneScreenShotEvent_11;
 };
@@ -2551,10 +2541,6 @@ struct ARTrackable_2_tE57413318307EA1D5A47931CA675B32B49A1D79B  : public ARTrack
 // ARContentView
 struct ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25  : public View_t526E49046922A2DE1088CDD003238D91F8D37F2A
 {
-	// UnityEngine.XR.ARFoundation.ARPlaneManager ARContentView::arPlaneManager
-	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___arPlaneManager_4;
-	// UnityEngine.XR.ARFoundation.ARRaycastManager ARContentView::arRaycastManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___arRaycastManager_5;
 };
 
 // AvatarsView
@@ -2805,10 +2791,6 @@ struct List_1_t74F984FDD52534B06C6A3E114E494CACC9BF8868_StaticFields
 
 // System.Collections.Generic.List`1<Controls/IMouseControlActions>
 
-// ViewOperator`1<ARContentView>
-
-// ViewOperator`1<ARContentView>
-
 // ViewOperator`1<AvatarsView>
 
 // ViewOperator`1<AvatarsView>
@@ -2832,6 +2814,10 @@ struct List_1_t74F984FDD52534B06C6A3E114E494CACC9BF8868_StaticFields
 // ViewOperator`1<PosesView>
 
 // ViewOperator`1<PosesView>
+
+// ARContent
+
+// ARContent
 
 // Controls
 
@@ -2913,10 +2899,6 @@ struct String_t_StaticFields
 // UnityEngine.Events.UnityEvent`1<System.Boolean>
 
 // UnityEngine.Events.UnityEvent`1<System.Boolean>
-
-// ARContent
-
-// ARContent
 
 // UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs
 
@@ -4101,7 +4083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Screen_set_sleepTimeout_mB375970159A73BB
 // System.Void Main::Initialize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_Initialize_m1DEF5AD3AF548E6429C096358B7FAAC403B83F48 (Main_t6125012C4D88701077DD3C4660130C5535730E1E* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARFoundation.ARRaycastManager ARContent::GetARRaycastManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D_inline (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) ;
 // System.Void FinderTarget::SetRayCastManager(UnityEngine.XR.ARFoundation.ARRaycastManager)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E (FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* __this, ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___0_arRaycastManager, const RuntimeMethod* method) ;
 // System.Void FinderTarget::Initialize()
@@ -4304,17 +4286,6 @@ inline Ball_t3B9BED2176F4B268C18E329E499D8EC9914B5E2B* Factory_Get_TisBall_t3B9B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
 // System.Void Factory::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Factory__ctor_m8A868830FC6D7FCB905746BFF6A02B86AD9DAB72 (Factory_tC1629A163BFE3F2165C0AEE89EBC54D61D134530* __this, const RuntimeMethod* method) ;
-// UnityEngine.XR.ARFoundation.ARRaycastManager ARContentView::GetARRaycastManager()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContentView_GetARRaycastManager_mD7B7A4D7ED0D8B25E9EB9E35567BB5CA6F210D6D_inline (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) ;
-// System.Void ARContentView::DisableARRayCastManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContentView_DisableARRayCastManager_mB3DF30BF7889668AA07CCAC8E873D30489821559 (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) ;
-// System.Void ARContentView::DisableARPlaneManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContentView_DisableARPlaneManager_m3E4808EE82FB8642E14C1D6B1A697C031D2EA55D (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) ;
-// System.Void ViewOperator`1<ARContentView>::.ctor()
-inline void ViewOperator_1__ctor_mC70EE1EA99448F28C6FDBECC756D703D57008213 (ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A* __this, const RuntimeMethod* method)
-{
-	((  void (*) (ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A*, const RuntimeMethod*))ViewOperator_1__ctor_m9529F39D7F670D981F811DEC351B21D308A54FD9_gshared)(__this, method);
-}
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GUIStyle::.ctor()
@@ -7406,37 +7377,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPenalty_Awake_mA331BA1FDB9487D5FEC5
 		Main_t6125012C4D88701077DD3C4660130C5535730E1E* L_1 = __this->___main_4;
 		NullCheck(L_1);
 		Main_Initialize_m1DEF5AD3AF548E6429C096358B7FAAC403B83F48(L_1, NULL);
-		// arContent.CreateView();
+		// ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
 		ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* L_2 = __this->___arContent_5;
 		NullCheck(L_2);
-		VirtualActionInvoker0::Invoke(4 /* System.Void ViewOperator`1<ARContentView>::CreateView() */, L_2);
-		// ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
-		ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* L_3 = __this->___arContent_5;
-		NullCheck(L_3);
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_4;
-		L_4 = ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D(L_3, NULL);
-		V_0 = L_4;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_3;
+		L_3 = ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D_inline(L_2, NULL);
+		V_0 = L_3;
 		// finderTarget.CreateView();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_5 = __this->___finderTarget_6;
-		NullCheck(L_5);
-		VirtualActionInvoker0::Invoke(4 /* System.Void ViewOperator`1<FinderTargetView>::CreateView() */, L_5);
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_4 = __this->___finderTarget_6;
+		NullCheck(L_4);
+		VirtualActionInvoker0::Invoke(4 /* System.Void ViewOperator`1<FinderTargetView>::CreateView() */, L_4);
 		// finderTarget.SetRayCastManager(arRaycastManager);
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_6 = __this->___finderTarget_6;
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_7 = V_0;
-		NullCheck(L_6);
-		FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E(L_6, L_7, NULL);
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_5 = __this->___finderTarget_6;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_6 = V_0;
+		NullCheck(L_5);
+		FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E(L_5, L_6, NULL);
 		// finderTarget.Initialize();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_8 = __this->___finderTarget_6;
-		NullCheck(L_8);
-		FinderTarget_Initialize_m508F7BCD1A9BEE374BDA0EE34710E365F4C31A25(L_8, NULL);
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_7 = __this->___finderTarget_6;
+		NullCheck(L_7);
+		FinderTarget_Initialize_m508F7BCD1A9BEE374BDA0EE34710E365F4C31A25(L_7, NULL);
 		// gate.CreateViewClosed();
+		Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A* L_8 = __this->___gate_7;
+		NullCheck(L_8);
+		VirtualActionInvoker0::Invoke(5 /* System.Void ViewOperator`1<GateView>::CreateViewClosed() */, L_8);
+		// gate.Initialize();
 		Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A* L_9 = __this->___gate_7;
 		NullCheck(L_9);
-		VirtualActionInvoker0::Invoke(5 /* System.Void ViewOperator`1<GateView>::CreateViewClosed() */, L_9);
-		// gate.Initialize();
-		Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A* L_10 = __this->___gate_7;
-		NullCheck(L_10);
-		Gate_Initialize_m18F92661CBE44FCB559F0F253D0E7F2DF750EC17(L_10, NULL);
+		Gate_Initialize_m18F92661CBE44FCB559F0F253D0E7F2DF750EC17(L_9, NULL);
 		// Subscribe();
 		EntryPenalty_Subscribe_mF77B366E29E7ADCB32CCD246902B31CAF1A8E7CB(__this, NULL);
 		// }
@@ -9832,47 +9799,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpawnerBall__ctor_m5EDCFD9610DCD78677463
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
 {
 	{
-		// public ARRaycastManager GetARRaycastManager() => view.GetARRaycastManager();
-		ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* L_0 = ((ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A*)__this)->___view_2;
-		NullCheck(L_0);
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_1;
-		L_1 = ARContentView_GetARRaycastManager_mD7B7A4D7ED0D8B25E9EB9E35567BB5CA6F210D6D_inline(L_0, NULL);
-		return L_1;
-	}
-}
-// System.Void ARContent::DisableARRayCastManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContent_DisableARRayCastManager_m44A27B40413A7AA002D68988D46DDF2112837B10 (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
-{
-	{
-		// public void DisableARRayCastManager() =>  view.DisableARRayCastManager();
-		ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* L_0 = ((ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A*)__this)->___view_2;
-		NullCheck(L_0);
-		ARContentView_DisableARRayCastManager_mB3DF30BF7889668AA07CCAC8E873D30489821559(L_0, NULL);
-		return;
+		// public ARRaycastManager GetARRaycastManager() => arRaycastManager;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_1;
+		return L_0;
 	}
 }
 // System.Void ARContent::DisableARPlaneManager()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContent_DisableARPlaneManager_m618B2DABFBB1C621116E706DBA34A1970FC70A82 (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
 {
 	{
-		// public void DisableARPlaneManager() =>  view.DisableARPlaneManager();
-		ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* L_0 = ((ViewOperator_1_tA39CF3E3E01CA53C35FCF54794612CC0918B9B7A*)__this)->___view_2;
+		// public void DisableARPlaneManager() => arPlaneManager.enabled = false;
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_0 = __this->___arPlaneManager_0;
 		NullCheck(L_0);
-		ARContentView_DisableARPlaneManager_m3E4808EE82FB8642E14C1D6B1A697C031D2EA55D(L_0, NULL);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, (bool)0, NULL);
+		return;
+	}
+}
+// System.Void ARContent::DisableARRayCastManager()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContent_DisableARRayCastManager_m44A27B40413A7AA002D68988D46DDF2112837B10 (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
+{
+	{
+		// public void DisableARRayCastManager() => arRaycastManager.enabled = false;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_1;
+		NullCheck(L_0);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, (bool)0, NULL);
 		return;
 	}
 }
 // System.Void ARContent::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContent__ctor_m978991BDFFF4E5688A4E0101E10E47AC1500D1A3 (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ViewOperator_1__ctor_mC70EE1EA99448F28C6FDBECC756D703D57008213_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		ViewOperator_1__ctor_mC70EE1EA99448F28C6FDBECC756D703D57008213(__this, ViewOperator_1__ctor_mC70EE1EA99448F28C6FDBECC756D703D57008213_RuntimeMethod_var);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
@@ -9884,37 +9842,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContent__ctor_m978991BDFFF4E5688A4E010
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// UnityEngine.XR.ARFoundation.ARRaycastManager ARContentView::GetARRaycastManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContentView_GetARRaycastManager_mD7B7A4D7ED0D8B25E9EB9E35567BB5CA6F210D6D (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ARRaycastManager GetARRaycastManager() => arRaycastManager;
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_5;
-		return L_0;
-	}
-}
-// System.Void ARContentView::DisableARPlaneManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContentView_DisableARPlaneManager_m3E4808EE82FB8642E14C1D6B1A697C031D2EA55D (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) 
-{
-	{
-		// public void DisableARPlaneManager() => arPlaneManager.enabled = false;
-		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_0 = __this->___arPlaneManager_4;
-		NullCheck(L_0);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, (bool)0, NULL);
-		return;
-	}
-}
-// System.Void ARContentView::DisableARRayCastManager()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContentView_DisableARRayCastManager_mB3DF30BF7889668AA07CCAC8E873D30489821559 (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) 
-{
-	{
-		// public void DisableARRayCastManager() => arRaycastManager.enabled = false;
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_5;
-		NullCheck(L_0);
-		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, (bool)0, NULL);
-		return;
-	}
-}
 // System.Void ARContentView::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARContentView__ctor_m5B75D14D9EA3C9D9A4CDE7756A86A76B8A7283D8 (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) 
 {
@@ -10448,6 +10375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvatarsView__ctor_mFF111207A8ECB966DBD71
 // System.Void EntryPhoto::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_Start_m89DC208E58A8B70E101DDE7942AFB3D2708C6462 (EntryPhoto_tCB8C5A4BB546AD6A491A1844A63AE6A9F73C7751* __this, const RuntimeMethod* method) 
 {
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* V_0 = NULL;
 	{
 		// Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		Screen_set_sleepTimeout_mB375970159A73BB484A2B5E62A943330B83ABF9A((-1), NULL);
@@ -10460,34 +10388,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_Start_m89DC208E58A8B70E101DDE
 		NullCheck(L_1);
 		Main_Initialize_m1DEF5AD3AF548E6429C096358B7FAAC403B83F48(L_1, NULL);
 		// avatars.CreateViewClosed();
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_2 = __this->___avatars_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_2 = __this->___avatars_8;
 		NullCheck(L_2);
 		VirtualActionInvoker0::Invoke(5 /* System.Void ViewOperator`1<AvatarsView>::CreateViewClosed() */, L_2);
 		// avatars.Initialize();
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_3 = __this->___avatars_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_3 = __this->___avatars_8;
 		NullCheck(L_3);
 		Avatars_Initialize_m038BC410AE88D63C306F9FBC56D9116FE8F14FF9(L_3, NULL);
 		// poses.CreateViewClosed();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_4 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_4 = __this->___poses_7;
 		NullCheck(L_4);
 		VirtualActionInvoker0::Invoke(5 /* System.Void ViewOperator`1<PosesView>::CreateViewClosed() */, L_4);
 		// poses.Initialize();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_5 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_5 = __this->___poses_7;
 		NullCheck(L_5);
 		Poses_Initialize_m358F709BE5BF7B368DF43935DA6EFB6DCA98367E(L_5, NULL);
-		// finderTarget.CreateView();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_6 = __this->___finderTarget_5;
+		// ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
+		ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* L_6 = __this->___arContent_5;
 		NullCheck(L_6);
-		VirtualActionInvoker0::Invoke(4 /* System.Void ViewOperator`1<FinderTargetView>::CreateView() */, L_6);
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_7;
+		L_7 = ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D_inline(L_6, NULL);
+		V_0 = L_7;
+		// finderTarget.CreateView();
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_8 = __this->___finderTarget_6;
+		NullCheck(L_8);
+		VirtualActionInvoker0::Invoke(4 /* System.Void ViewOperator`1<FinderTargetView>::CreateView() */, L_8);
 		// finderTarget.SetRayCastManager(arRaycastManager);
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_7 = __this->___finderTarget_5;
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_8 = __this->___arRaycastManager_10;
-		NullCheck(L_7);
-		FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E(L_7, L_8, NULL);
-		// finderTarget.Initialize();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_9 = __this->___finderTarget_5;
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_9 = __this->___finderTarget_6;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_10 = V_0;
 		NullCheck(L_9);
-		FinderTarget_Initialize_m508F7BCD1A9BEE374BDA0EE34710E365F4C31A25(L_9, NULL);
+		FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E(L_9, L_10, NULL);
+		// finderTarget.Initialize();
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_11 = __this->___finderTarget_6;
+		NullCheck(L_11);
+		FinderTarget_Initialize_m508F7BCD1A9BEE374BDA0EE34710E365F4C31A25(L_11, NULL);
 		// Subscribe();
 		EntryPhoto_Subscribe_m323FDDDBE0CBCA6150B3C1001C4FB00B0C8CA9AE(__this, NULL);
 		// }
@@ -10499,22 +10433,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_SetPositionObject_m49E7C13671
 {
 	{
 		// avatars.SetPositionPlayer(position);
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_0 = __this->___avatars_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_0 = __this->___avatars_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_position;
 		NullCheck(L_0);
 		Avatars_SetPositionPlayer_mD43F1B8B8B3F201BE5025D8F7EFFFA49BAE4156C(L_0, L_1, NULL);
 		// avatars.Open();
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_2 = __this->___avatars_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_2 = __this->___avatars_8;
 		NullCheck(L_2);
 		Avatars_Open_m320C5E517F0EB2C3DEE3D83593FAF8779F0109BA(L_2, NULL);
-		// finderTarget.Close();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_3 = __this->___finderTarget_5;
+		// arContent.DisableARPlaneManager();
+		ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* L_3 = __this->___arContent_5;
 		NullCheck(L_3);
-		FinderTarget_Close_m9D2DA9DB2EFF4068570C95A0021C42D4DC5B76E9(L_3, NULL);
-		// poses.Open();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_4 = __this->___poses_6;
+		ARContent_DisableARPlaneManager_m618B2DABFBB1C621116E706DBA34A1970FC70A82(L_3, NULL);
+		// arContent.DisableARRayCastManager();
+		ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* L_4 = __this->___arContent_5;
 		NullCheck(L_4);
-		Poses_Open_mAA5004991059B4FBBC41C0A1D1BAC014A5FF3D33(L_4, NULL);
+		ARContent_DisableARRayCastManager_m44A27B40413A7AA002D68988D46DDF2112837B10(L_4, NULL);
+		// finderTarget.Close();
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_5 = __this->___finderTarget_6;
+		NullCheck(L_5);
+		FinderTarget_Close_m9D2DA9DB2EFF4068570C95A0021C42D4DC5B76E9(L_5, NULL);
+		// poses.Open();
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_6 = __this->___poses_7;
+		NullCheck(L_6);
+		Poses_Open_mAA5004991059B4FBBC41C0A1D1BAC014A5FF3D33(L_6, NULL);
 		// }
 		return;
 	}
@@ -10619,7 +10561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_StartScreenShot_m35EC20BDBAFD
 		// CloseView();
 		EntryPhoto_CloseView_mB861E5AD8646545CE376C6B721B37882CE577B56(__this, NULL);
 		// screenShot.GetScreenShot(DoneScreenShotEvent);
-		ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5* L_0 = __this->___screenShot_8;
+		ScreenShot_tC23FCD807AF37A3F9D83DCCEB4A6B5BDDE2FA0F5* L_0 = __this->___screenShot_9;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = __this->___DoneScreenShotEvent_11;
 		NullCheck(L_0);
 		ScreenShot_GetScreenShot_m5E0D78812D17BE4F609065AED65C0587A3A33A0C(L_0, L_1, NULL);
@@ -10639,7 +10581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_CloseView_mB861E5AD8646545CE3
 		NullCheck(L_0);
 		Main_Close_mAD315E4CABC83A6D8C4E33BD1A059FB88731F5E4(L_0, NULL);
 		// poses.Close();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_7;
 		NullCheck(L_1);
 		Poses_Close_mB3A8AF714ECC0836483CC2AF7266FE16D7ACB743(L_1, NULL);
 		// }
@@ -10655,7 +10597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_OpenView_mC8666AE7C017D6D3B67
 		NullCheck(L_0);
 		Main_Open_m1A76FCECBE1F75188628A74F8E7AC5948B1BB7B1(L_0, NULL);
 		// poses.Open();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_7;
 		NullCheck(L_1);
 		Poses_Open_mAA5004991059B4FBBC41C0A1D1BAC014A5FF3D33(L_1, NULL);
 		// }
@@ -10710,39 +10652,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_Subscribe_m323FDDDBE0CBCA6150
 	}
 	{
 		// poses.IdleEvent += avatars.Idle;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_0 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_1 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_0 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_1 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, L_1, (intptr_t)((void*)Avatars_Idle_m335BB404246A30025BBA5B788C48F8B117609F81_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		Poses_add_IdleEvent_m16DAD853E161DE83E8EC1BD4F5DE5E311CB139EA(L_0, L_2, NULL);
 		// poses.KickBallEvent += avatars.KickBall;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_3 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_4 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_3 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_4 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_5, L_4, (intptr_t)((void*)Avatars_KickBall_m42BDDFCE9890FE654FF164F6BB649C2530EB4CC3_RuntimeMethod_var), NULL);
 		NullCheck(L_3);
 		Poses_add_KickBallEvent_m75B51F9D86B57A9DEF9CA6E8DE636D5EFFD06014(L_3, L_5, NULL);
 		// poses.BallIdleEvent += avatars.BallIdle;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_6 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_7 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_6 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_7 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_8);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_8, L_7, (intptr_t)((void*)Avatars_BallIdle_mFCCF68FA2D4EEA0D2EDD12DDCFECE910549DEBA1_RuntimeMethod_var), NULL);
 		NullCheck(L_6);
 		Poses_add_BallIdleEvent_mFB3FA24BFD22B1BBC783981123DFB24D9E321A48(L_6, L_8, NULL);
 		// poses.BallWaitEvent += avatars.BallWaitWaiting;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_9 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_10 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_9 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_10 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_11 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_11);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_11, L_10, (intptr_t)((void*)Avatars_BallWaitWaiting_m78433D375AF6F082D6A8025EFE6187FF156730A9_RuntimeMethod_var), NULL);
 		NullCheck(L_9);
 		Poses_add_BallWaitEvent_m9AA05FDA61075280E899E55D5A2FCA3F7B3F7AB5(L_9, L_11, NULL);
 		// poses.PhotoEvent += StartScreenShot;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_12 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_12 = __this->___poses_7;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_13 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_13);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_13, __this, (intptr_t)((void*)EntryPhoto_StartScreenShot_m35EC20BDBAFD109E159185F7DB1A6B1B486F7FED_RuntimeMethod_var), NULL);
@@ -10754,7 +10696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_Subscribe_m323FDDDBE0CBCA6150
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_14, __this, (intptr_t)((void*)EntryPhoto_DoneScreenShot_m9136917685D7CE8FDFC12CFFFD664E3A1663764F_RuntimeMethod_var), NULL);
 		EntryPhoto_add_DoneScreenShotEvent_m3E60AACF16D771546B751A71506F4745473B7522(__this, L_14, NULL);
 		// finderTarget.SetPositionEvent += SetPositionObject;
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_15 = __this->___finderTarget_5;
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_15 = __this->___finderTarget_6;
 		Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* L_16 = (Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2*)il2cpp_codegen_object_new(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2_il2cpp_TypeInfo_var);
 		NullCheck(L_16);
 		Action_1__ctor_mE9E1859293BB35881CCC94B4A6E0A0E9997E046C(L_16, __this, (intptr_t)((void*)EntryPhoto_SetPositionObject_m49E7C136711E32C1DB3E77F979507EF161FB47C3_RuntimeMethod_var), NULL);
@@ -10787,43 +10729,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_UnSubscribe_mAEDD65201C36199D
 		NullCheck(L_0);
 		Main_UnSubscribe_m8290802A51163B65452AD58B93E1C8B488D4DEF1(L_0, NULL);
 		// poses.UnSubscribe();
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_1 = __this->___poses_7;
 		NullCheck(L_1);
 		Poses_UnSubscribe_m5CF7B08DF0562A67C30B6361672BB2048F530E87(L_1, NULL);
 		// poses.IdleEvent -= avatars.Idle;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_2 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_3 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_2 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_3 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_4 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_4, L_3, (intptr_t)((void*)Avatars_Idle_m335BB404246A30025BBA5B788C48F8B117609F81_RuntimeMethod_var), NULL);
 		NullCheck(L_2);
 		Poses_remove_IdleEvent_mD1DFEC0F5D38178B8CA7582E44F041B84599FEF0(L_2, L_4, NULL);
 		// poses.KickBallEvent -= avatars.KickBall;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_5 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_6 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_5 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_6 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_7);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_7, L_6, (intptr_t)((void*)Avatars_KickBall_m42BDDFCE9890FE654FF164F6BB649C2530EB4CC3_RuntimeMethod_var), NULL);
 		NullCheck(L_5);
 		Poses_remove_KickBallEvent_m8DD26FBDEAB60A0F656E6B94F53967617A4A6F4B(L_5, L_7, NULL);
 		// poses.BallIdleEvent -= avatars.BallIdle;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_8 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_9 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_8 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_9 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_10, L_9, (intptr_t)((void*)Avatars_BallIdle_mFCCF68FA2D4EEA0D2EDD12DDCFECE910549DEBA1_RuntimeMethod_var), NULL);
 		NullCheck(L_8);
 		Poses_remove_BallIdleEvent_m93D572D058B339875826D51BAA240319F17D1D87(L_8, L_10, NULL);
 		// poses.BallWaitEvent -= avatars.BallWaitWaiting;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_11 = __this->___poses_6;
-		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_12 = __this->___avatars_7;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_11 = __this->___poses_7;
+		Avatars_tC01061DA02B89DFE5BC8D4913D60B80899D653EC* L_12 = __this->___avatars_8;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_13 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_13);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_13, L_12, (intptr_t)((void*)Avatars_BallWaitWaiting_m78433D375AF6F082D6A8025EFE6187FF156730A9_RuntimeMethod_var), NULL);
 		NullCheck(L_11);
 		Poses_remove_BallWaitEvent_m2A3A6B0D2B5014764FE99A320451193005583AB1(L_11, L_13, NULL);
 		// poses.PhotoEvent -= StartScreenShot;
-		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_14 = __this->___poses_6;
+		Poses_t4BAADB8561303310C5E6FF7E9BB34E55CD7F3EFE* L_14 = __this->___poses_7;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_15 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_15);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_15, __this, (intptr_t)((void*)EntryPhoto_StartScreenShot_m35EC20BDBAFD109E159185F7DB1A6B1B486F7FED_RuntimeMethod_var), NULL);
@@ -10835,11 +10777,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryPhoto_UnSubscribe_mAEDD65201C36199D
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_16, __this, (intptr_t)((void*)EntryPhoto_DoneScreenShot_m9136917685D7CE8FDFC12CFFFD664E3A1663764F_RuntimeMethod_var), NULL);
 		EntryPhoto_remove_DoneScreenShotEvent_mF397AC6D63EDA9BF8E0DF630943124DFA2227C89(__this, L_16, NULL);
 		// finderTarget.UnSubscribe();
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_17 = __this->___finderTarget_5;
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_17 = __this->___finderTarget_6;
 		NullCheck(L_17);
 		FinderTarget_UnSubscribe_mB88F4D40904015D83DFB85A83B0BBA6C9A09360E(L_17, NULL);
 		// finderTarget.SetPositionEvent -= SetPositionObject;
-		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_18 = __this->___finderTarget_5;
+		FinderTarget_tB0D7D7F37FDFA2967BF1E807F8565FB2E47CE0D0* L_18 = __this->___finderTarget_6;
 		Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* L_19 = (Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2*)il2cpp_codegen_object_new(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2_il2cpp_TypeInfo_var);
 		NullCheck(L_19);
 		Action_1__ctor_mE9E1859293BB35881CCC94B4A6E0A0E9997E046C(L_19, __this, (intptr_t)((void*)EntryPhoto_SetPositionObject_m49E7C136711E32C1DB3E77F979507EF161FB47C3_RuntimeMethod_var), NULL);
@@ -13456,6 +13398,14 @@ IL_0021:
 		return L_10;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D_inline (ARContent_tE5B766EC4AE5BBD4CF80E81945DEFCA295522E33* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ARRaycastManager GetARRaycastManager() => arRaycastManager;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_1;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GateView_GetParentBall_mA64C5A76C56C9E11FD70ABCD7683AC74367865B7_inline (GateView_t057B118200766F0490118287FCDDB897F4831793* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13697,14 +13647,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		float L_1 = ___1_y;
 		__this->___y_1 = L_1;
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ARContentView_GetARRaycastManager_mD7B7A4D7ED0D8B25E9EB9E35567BB5CA6F210D6D_inline (ARContentView_tC076CD3302B1C80B4BE3AD7A21E45093BD442E25* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ARRaycastManager GetARRaycastManager() => arRaycastManager;
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_0 = __this->___arRaycastManager_5;
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FinderTargetView_SetRayCastManager_m155EA99B4B557FCBBA26CA366D741921FB04571E_inline (FinderTargetView_t782901C53E70722D470B66C4ABFAF357F014B0A5* __this, ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___0_arRaycastManager, const RuntimeMethod* method) 

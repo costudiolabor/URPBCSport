@@ -7,7 +7,7 @@ public class GateView : View {
     [SerializeField] private GoalKeeper goalKeeper;
     [SerializeField] private Transform parentBall;
     [SerializeField] private float timeSpawn = 3.0f;
-    public event Action GetBallEvent, IdleEvent;
+    public event Action GetBallEvent, IdleEvent, GoalEvent;
 
     public void Initialize() {
         goalKeeper.Initialize();
@@ -24,4 +24,14 @@ public class GateView : View {
          yield return new WaitForSeconds(timeSpawn);
          GetBallEvent?.Invoke();
      }
+
+    private void OnTriggerEnter(Collider other) {
+       // Debug.Log("trigger");
+       var isBall = other.TryGetComponent(out Ball ball);
+       if (isBall == false) return;
+       //Debug.LogError("Ball");
+       if (ball.isActive == false) return;
+       ball.isActive = false;
+       GoalEvent?.Invoke();
+    }
 }
