@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: ecaa666f5f0543b42a79ca8c65ac865a
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarBodyMale_Color_1K
+    second: {fileID: 2800000, guid: 7c948e23f6361ff41b7c6c8245964fd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarBodyMale_Normal1_1K
+    second: {fileID: 2800000, guid: ca6c5c55db3ee0a48859d07d0703c322, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarBodyMale_Roughness_1K
+    second: {fileID: 2800000, guid: 4dd8adfbb8f051d47b8eda057b03344b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarBodyMale_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: eba5f6db3f23b6345a7ee60ec75a5066, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarEyes_Color_512
+    second: {fileID: 2800000, guid: c4b12dafbe3471d4ba9a7c9cff86440f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarEyes_Normal_512
+    second: {fileID: 2800000, guid: d0cfc8a60148a004d85f5401a970c40d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarEyes_Roughness_512
+    second: {fileID: 2800000, guid: c1df57f510c474c47b35f5783cd9cad4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarEyes_UnityMetallicSmoothness_512
+    second: {fileID: 2800000, guid: 3746517a92cb4e648992bb87b382792a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarHeadMale_Color_1K
+    second: {fileID: 2800000, guid: 97e5e0f25a663dd43b6bcbf82b5965fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarHeadMale_Normal1_1K
+    second: {fileID: 2800000, guid: 8c9362211c508664e92db0d24aa68ef7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarHeadMale_Roughness_1K
+    second: {fileID: 2800000, guid: 9d97e0a6a652ee44190566b5011fef92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarHeadMale_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: 1fa6611c148e94d419666bad907074b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarLeftCornea_Color_512
+    second: {fileID: 2800000, guid: d42f215e73c300144b83538652cd7e05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarRightCornea_Color_512
+    second: {fileID: 2800000, guid: 5be7690f3ffdf3346a032a833ddd2770, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeeth_Color_1K
+    second: {fileID: 2800000, guid: b4793b430bcd853499ac9d44b4729e3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeeth_Normal1_1K
+    second: {fileID: 2800000, guid: b3052bca23ae8cd49848efde43ca1a26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeeth_Roughness_1K
+    second: {fileID: 2800000, guid: 779a4e3e899f5534586d1d00a876df8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeeth_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: 1e9d35604b8f64a479b5913977fb440b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shorts_Getar_Color_1K
+    second: {fileID: 2800000, guid: eb7ce7778fd867a498b02fdae1539848, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shorts_Getar_Normal_1K
+    second: {fileID: 2800000, guid: d100811a84ad9d645b593e41c8320a6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shorts_Getar_Roughness_1K
+    second: {fileID: 2800000, guid: 7fba2987f77e9a4479fae524966ae666, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shorts_Getar_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: 43f393f7eb6136e4889f047d9858c763, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sneakers_AZAT_Color_1K
+    second: {fileID: 2800000, guid: 383ebb683ff11c44696ba859c0b44bd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sneakers_AZAT_Normal_1K
+    second: {fileID: 2800000, guid: a9bd757fd2ed211498c4d8ab781d8aa2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sneakers_AZAT_Roughness_1K
+    second: {fileID: 2800000, guid: fef141dd1028c744096c912d591d2ea6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sneakers_AZAT_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: f44a805b21fb66740a9b7680c7f1f0cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Color_1K
+    second: {fileID: 2800000, guid: 37babade1081f904ea6a5b8fccddad6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Normal_1K
+    second: {fileID: 2800000, guid: da38ec708fd629442abde027887067c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Roughness_1K
+    second: {fileID: 2800000, guid: 8d863bad90a064e48a8dac21ee5464b8, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

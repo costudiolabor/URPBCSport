@@ -1,0 +1,82 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "MouseControl",
+            "id": "9f601862-4de4-4030-af5f-ad8f4daad9a9",
+            "actions": [
+                {
+                    "name": "ButtonLeft",
+                    "type": "Button",
+                    "id": "a7b1cde8-cc72-4836-9463-3bc3817ed588",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveMouse",
+                    "type": "Value",
+                    "id": "86d39a92-db92-4aa5-bdd1-125c437795bb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8ee76d63-83ec-4835-a6bb-f94e18715501",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8e45d78-e316-49b2-a8fe-916df8983555",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e265163-7290-4510-8064-da4119336758",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70d66fa1-83ae-43d1-9232-19ca73134993",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveMouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme",
+            "bindingGroup": "New control scheme",
+            "devices": []
+        }
+    ]
+}
