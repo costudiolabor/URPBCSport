@@ -48,6 +48,8 @@ public class EntryPenalty : MonoBehaviour {
     private void Goal() {
         scoreInfo.SetGoal();
     }
+
+    private void SaveRecord() => scoreInfo.SaveRecord();
     
     private void Subscribe() {
         finderTarget.SetPositionEvent += SetPositionObject;
@@ -65,5 +67,6 @@ public class EntryPenalty : MonoBehaviour {
     
     private void OnDestroy() {
         UnSubscribe();
+        SaveRecord();
     }
 }

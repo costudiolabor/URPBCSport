@@ -491,7 +491,6 @@ MonoBehaviour:
   scoreInfo:
     prefab: {fileID: 469029464714219815, guid: 591959a1a441b00499934c40717e3301, type: 3}
     viewParent: {fileID: 283054857}
-    countScoreGoal: 1
   arContent:
     arPlaneManager: {fileID: 1556082236}
     arRaycastManager: {fileID: 1556082234}
