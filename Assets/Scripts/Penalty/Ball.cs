@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+
 public class Ball : MonoBehaviour {
     [SerializeField] private Rigidbody thisRigidbody;
     [SerializeField] private float maxSpeedBall = 1.0f;
@@ -14,6 +15,7 @@ public class Ball : MonoBehaviour {
         //Vector3 directionBall = new Vector3(direction.x, thisTransform.position.y, direction.y) +  thisTransform.forward;;
         Vector3 directionBall = thisTransform.forward;;
         thisRigidbody.AddForce(directionBall * speedBall, ForceMode.Impulse);
+        //Debug.LogError("kick ");
         StartCoroutine(TimerLife());
     }
   

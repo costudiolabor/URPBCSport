@@ -11,8 +11,8 @@ public class Boots : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other) {
         bool isBall = other.TryGetComponent(out Ball ball);
-        Debug.Log(" Collision");
-        Debug.Log(ball);
+        //Debug.Log(" Collision");
+        //Debug.Log(ball);
         if (isBall) {
             KickEvent?.Invoke();
             ball.Kick(direction, distance);

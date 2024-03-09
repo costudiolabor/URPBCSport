@@ -36,7 +36,7 @@ public class PlayerPenalty : MonoBehaviour {
    }
 
    private void OnKick() {
-      Debug.Log("OnKick");
+      //Debug.Log("OnKick");
       StateMoveBack();
    }
 
