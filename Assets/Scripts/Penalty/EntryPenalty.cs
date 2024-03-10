@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.XR.ARFoundation;
 
 public class EntryPenalty : MonoBehaviour {
@@ -39,6 +40,15 @@ public class EntryPenalty : MonoBehaviour {
         
         _kicker.Initialize();
         _kicker.UpButtonEvent += OnUpButton;
+        
+        _kicker.MoveMouseEvent += OnMoveMouse;
+    }
+
+    private readonly ShowDirection _showDirection = new ();
+    
+    private void OnMoveMouse(Vector2 direction, float distance) {
+        Vector3 ballPosition = gate.GetParentBall().position;
+        _showDirection.Show(ballPosition, direction, distance);
     }
     
     private void OnUpButton(Vector2 direction, float distance) {
@@ -49,7 +59,7 @@ public class EntryPenalty : MonoBehaviour {
         scoreInfo.SetGoal();
     }
 
-    private void SaveRecord() => scoreInfo.SaveRecord();
+    private void SaveBestScore() => scoreInfo.SaveBestScore();
     
     private void Subscribe() {
         finderTarget.SetPositionEvent += SetPositionObject;
@@ -61,12 +71,27 @@ public class EntryPenalty : MonoBehaviour {
         finderTarget.SetPositionEvent -= SetPositionObject;
         gate.GoalEvent -= Goal;
         _kicker.UpButtonEvent -= OnUpButton;
+        
+        _kicker.MoveMouseEvent += OnMoveMouse;
+        
         _kicker.UnSubscribe();
         gate.UnSubscribe();
     }
     
     private void OnDestroy() {
         UnSubscribe();
-        SaveRecord();
+        SaveBestScore();
+    }
+}
+
+[System.Serializable]
+public class ShowDirection {
+    public void Show(Vector3 ballPosition, Vector2 direction, float distance) {
+        distance /= 100;
+        var targetPosition = new Vector3(direction.x, ballPosition.y, direction.y);
+        targetPosition = (ballPosition + targetPosition) * distance;
+        
+        //Debug.Log("direction:" + direction + "  distance:" + distance);
+        Debug.DrawLine(ballPosition, targetPosition, Color.red, 0.5f); 
     }
 }

@@ -12,10 +12,8 @@ public class Ball : MonoBehaviour {
     public void Kick(Vector2 direction, float power) {
         var speedBall = maxSpeedBall * power;
         var thisTransform = transform;
-        //Vector3 directionBall = new Vector3(direction.x, thisTransform.position.y, direction.y) +  thisTransform.forward;;
-        Vector3 directionBall = thisTransform.forward;;
+        Vector3 directionBall = new Vector3(direction.x, thisTransform.position.y, direction.y) + thisTransform.position; 
         thisRigidbody.AddForce(directionBall * speedBall, ForceMode.Impulse);
-        //Debug.LogError("kick ");
         StartCoroutine(TimerLife());
     }
   
