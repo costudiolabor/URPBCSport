@@ -393,6 +393,8 @@ struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 // System.UInt32[]
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+// UXHandle[]
+struct UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C;
 // UnityEngine.UIElements.StyleSheets.BaseStyleMatcher/MatchContext[]
 struct MatchContextU5BU5D_t49C4E5DA5C1F9B06B211BE6F94AC6BD4D0ABCAE5;
 // UnityEngine.UIElements.EventDispatcher/DispatchContext[]
@@ -641,6 +643,7 @@ struct TextureIdU5BU5D_t03041DBB5C72B7E6F5F694A36DC5FEA75432188A;
 struct TrackableIdU5BU5D_tDB6E301F3B66EC6C487F725B5811B3A581ED4FD0;
 struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+struct UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C;
 struct MatchContextU5BU5D_t49C4E5DA5C1F9B06B211BE6F94AC6BD4D0ABCAE5;
 struct DispatchContextU5BU5D_t23932F8BEADFC827A9CA5636867F6721AD971757;
 struct EventRecordU5BU5D_tB7CC04280192D9B2B4980F107F93ABBBE4E4DCA8;
@@ -932,6 +935,11 @@ struct EmptyArray_1_tA0524EFBAA750B3D1DCF60FE6F2B25DE798675AD  : public RuntimeO
 
 // System.EmptyArray`1<System.UInt32>
 struct EmptyArray_1_t77BFDB090CFC6AE661834F0BD4ED43833F4F079D  : public RuntimeObject
+{
+};
+
+// System.EmptyArray`1<UXHandle>
+struct EmptyArray_1_tF9C8BABEEFF09F1159767B1BCE2AC0B02C51D477  : public RuntimeObject
 {
 };
 
@@ -1906,6 +1914,15 @@ struct UIntPtr_t
 {
 	// System.Void* System.UIntPtr::_pointer
 	void* ____pointer_1;
+};
+
+// UXHandle
+struct UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F 
+{
+	// UIManager/InstructionUI UXHandle::InstructionalUI
+	int32_t ___InstructionalUI_0;
+	// UIManager/InstructionGoals UXHandle::Goal
+	int32_t ___Goal_1;
 };
 
 // UnityEngine.Vector2
@@ -3793,6 +3810,15 @@ struct EmptyArray_1_t77BFDB090CFC6AE661834F0BD4ED43833F4F079D_StaticFields
 
 // System.EmptyArray`1<System.UInt32>
 
+// System.EmptyArray`1<UXHandle>
+struct EmptyArray_1_tF9C8BABEEFF09F1159767B1BCE2AC0B02C51D477_StaticFields
+{
+	// T[] System.EmptyArray`1::Value
+	UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C* ___Value_0;
+};
+
+// System.EmptyArray`1<UXHandle>
+
 // System.EmptyArray`1<UnityEngine.UIElements.StyleSheets.BaseStyleMatcher/MatchContext>
 struct EmptyArray_1_tA32003E1DE04BE9767FD72E5DC4FEA8D1B834759_StaticFields
 {
@@ -4273,6 +4299,10 @@ struct TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_StaticFields
 // System.UInt32
 
 // System.UInt32
+
+// UXHandle
+
+// UXHandle
 
 // UnityEngine.Vector2
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
@@ -5860,6 +5890,39 @@ struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA  : public RuntimeA
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UXHandle[]
+struct UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F m_Items[1];
+
+	inline UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, UXHandle_tC4DD5984B1181FA802AC5B288C7616225F9B147F value)
 	{
 		m_Items[index] = value;
 	}
@@ -26514,6 +26577,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyArray_1__cctor_m735C3B830F5CF726832
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_0 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0), (uint32_t)0);
 		((EmptyArray_1_t77BFDB090CFC6AE661834F0BD4ED43833F4F079D_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((EmptyArray_1_t77BFDB090CFC6AE661834F0BD4ED43833F4F079D_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.EmptyArray`1<UXHandle>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmptyArray_1__cctor_m27426B772C40DAB6BC69B79F8E8FBF1FEBB9040B_gshared (const RuntimeMethod* method) 
+{
+	{
+		UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C* L_0 = (UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C*)(UXHandleU5BU5D_tC2FEDC21A6AE89F7808C803D66325F1EF65A2B9C*)SZArrayNew(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0), (uint32_t)0);
+		((EmptyArray_1_tF9C8BABEEFF09F1159767B1BCE2AC0B02C51D477_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((EmptyArray_1_tF9C8BABEEFF09F1159767B1BCE2AC0B02C51D477_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1)))->___Value_0), (void*)L_0);
 		return;
 	}
 }

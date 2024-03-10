@@ -144,7 +144,7 @@ public class ARBasketballGameControl : MonoBehaviour
 		yield return null;
 		
 		InitThrowing(camera.GetComponent<Camera>());
-	}
+    }
 
 	public void RestartGame()
 	{
@@ -175,6 +175,8 @@ public class ARBasketballGameControl : MonoBehaviour
 		yield return null;
 
 		OnInitialized.Invoke();
+		
+		//RestartGame(); ///////////////
 	}
 
 	public void PauseGameWhenPlayerLeftSafeZone()

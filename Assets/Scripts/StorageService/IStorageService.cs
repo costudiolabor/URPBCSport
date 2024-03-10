@@ -1,4 +1,4 @@
 ﻿public  interface IStorageService {
-    public void SaveRecord(int value);
-    public int LoadRecord();
+    public void SaveBestScore(int value);
+    public int LoadBestScore();
 }

@@ -45,7 +45,7 @@ public class GoalKeeper : MonoBehaviour {
    private IEnumerator GetState() {
       while (true) {
          yield return new WaitForSeconds(_timeState);
-         _timeState = Random.Range(0.5f, 3.0f);
+         _timeState = Random.Range(0.5f, 1.5f);
          state = Random.Range(0, 3);
          HandleState();
       }

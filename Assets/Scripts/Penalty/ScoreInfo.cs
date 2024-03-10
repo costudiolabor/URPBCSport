@@ -5,21 +5,21 @@ using UnityEngine;
 public class ScoreInfo : ViewOperator<ScoreInfoView> {
     [SerializeField] private  int countScoreGoal = 1;
     private int _currentScoreGoal;
-    private int _scoreRecord;
+    private int _bestScore;
     private GameData _gameData = new();
     
     public void Initialize() {
-        _scoreRecord = _gameData.LoadRecord();
-        SetRecord(_scoreRecord.ToString());
+        _bestScore = _gameData.LoadBestScore();
+        SetBestScore(_bestScore.ToString());
         view.Initialize();
     }
 
     public void SetGoal() {
         _currentScoreGoal += countScoreGoal;
-        view.SetCurrentCount(_currentScoreGoal.ToString());
+        view.SetCurrentScore(_currentScoreGoal.ToString());
     }
 
-    public void SetRecord(string text) => view.SetRecord(text);
+    public void SetBestScore(string text) => view.SetBestScore(text);
 
-    public void SaveRecord() { if (_currentScoreGoal > _scoreRecord) _gameData.SaveRecord(_currentScoreGoal); }
+    public void SaveBestScore() { if (_currentScoreGoal > _bestScore) _gameData.SaveBestScore(_currentScoreGoal); }
 }

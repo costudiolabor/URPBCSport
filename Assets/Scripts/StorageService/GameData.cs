@@ -3,15 +3,15 @@ using UnityEngine;
 
 [Serializable]
 public class GameData : IStorageService {
-    private const string ScoreRecord = "record";
+    private const string BestScore = "record";
     private bool CheckKey(string key) => PlayerPrefs.HasKey(key);
-    public void SaveRecord(int value) {
-        PlayerPrefs.SetInt(ScoreRecord, value);
+    public void SaveBestScore(int value) {
+        PlayerPrefs.SetInt(BestScore, value);
         PlayerPrefs.Save();
     }
-    public int LoadRecord() {
+    public int LoadBestScore() {
         var result = 0;
-        if (CheckKey(ScoreRecord)) result = PlayerPrefs.GetInt(ScoreRecord);
+        if (CheckKey(BestScore)) result = PlayerPrefs.GetInt(BestScore);
         return result;
     }
 }

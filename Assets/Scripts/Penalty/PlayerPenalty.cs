@@ -36,7 +36,6 @@ public class PlayerPenalty : MonoBehaviour {
    }
 
    private void OnKick() {
-      //Debug.Log("OnKick");
       StateMoveBack();
    }
 
@@ -52,9 +51,9 @@ public class PlayerPenalty : MonoBehaviour {
 
    private void StateIdle() {
       _thisTransform.localPosition = startPosition;
-      _thisTransform.localEulerAngles = startRotation;
       animator.SetTrigger(idle);
-      _thisTransform.localEulerAngles = startRotation;
+      var localEulerAngles = startRotation;
+      _thisTransform.localEulerAngles = localEulerAngles;
       IdleEvent?.Invoke();
    }
    

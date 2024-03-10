@@ -23,6 +23,7 @@ I am here to help you and to improve my products for the best.
 */
 
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ButtonLoadingAnimationControl : MonoBehaviour
@@ -36,6 +37,9 @@ public class ButtonLoadingAnimationControl : MonoBehaviour
 
 	[SerializeField]
 	private GameObject loadingAnimation;
+	
+	public UnityEvent EmulClick;///////////// <summary>
+	
 
 	private void Start()
 	{
@@ -44,10 +48,15 @@ public class ButtonLoadingAnimationControl : MonoBehaviour
 
 	public void Complete()
 	{
+		//Debug.LogError("Complete");
 		button.interactable = true;
-
+	
 		imageOverlayOnComplete.enabled = true;
-
+	
 		loadingAnimation.SetActive(false);
+		
+		
+		EmulClick?.Invoke();///////////////
+		
 	}
 }

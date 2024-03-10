@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class HandlerMouse {
+public class HandlerInput {
     private Controls _controls;
     private float _differenceTime;
     public event Action UpButtonEvent;
@@ -11,9 +11,7 @@ public class HandlerMouse {
     public void Initialize() {
         _controls = new Controls();
         _controls.MouseControl.Enable();
-        _controls.MouseControl.ButtonLeft.started += context => { OnDownButton(); };
-        _controls.MouseControl.ButtonLeft.canceled += context => { OnUpButton(); };
-        _controls.MouseControl.MoveMouse.performed += context => { OnMoveMouse(context.ReadValue<Vector2>()); }; ;
+        Subscribe();
     }
 
     private void OnMoveMouse(Vector2 position) {
@@ -21,11 +19,21 @@ public class HandlerMouse {
     }
 
     private void OnDownButton() {
-        //_differenceTime = Time.time;
         DownButtonEvent?.Invoke();
     }
     private void OnUpButton() {
-        //_differenceTime = Time.time - _differenceTime;
         UpButtonEvent?.Invoke();
+    }
+    
+    private void Subscribe() {
+        _controls.MouseControl.ButtonLeft.started += context => { OnDownButton(); };
+        _controls.MouseControl.ButtonLeft.canceled += context => { OnUpButton(); };
+        _controls.MouseControl.MoveMouse.performed += context => { OnMoveMouse(context.ReadValue<Vector2>()); }; ;
+    }
+
+    public void UnSubscribe() {
+        _controls.MouseControl.ButtonLeft.started -= context => { OnDownButton(); };
+        _controls.MouseControl.ButtonLeft.canceled -= context => { OnUpButton(); };
+        _controls.MouseControl.MoveMouse.performed -= context => { OnMoveMouse(context.ReadValue<Vector2>()); }; ;
     }
 }
