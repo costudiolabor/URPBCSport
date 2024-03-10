@@ -13,7 +13,11 @@ public class HandlerMouse {
         _controls.MouseControl.Enable();
         _controls.MouseControl.ButtonLeft.started += context => { OnDownButton(); };
         _controls.MouseControl.ButtonLeft.canceled += context => { OnUpButton(); };
-        _controls.MouseControl.MoveMouse.performed += context => { MoveMouseEvent?.Invoke(context.ReadValue<Vector2>()); }; ;
+        _controls.MouseControl.MoveMouse.performed += context => { OnMoveMouse(context.ReadValue<Vector2>()); }; ;
+    }
+
+    private void OnMoveMouse(Vector2 position) {
+        MoveMouseEvent?.Invoke(position);
     }
 
     private void OnDownButton() {
