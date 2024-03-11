@@ -15,13 +15,16 @@ public class HandlerInput {
     }
 
     private void OnMoveMouse(Vector2 position) {
+        //Debug.Log("OnMoveMouse " + position);
         MoveMouseEvent?.Invoke(position);
     }
 
     private void OnDownButton() {
+        //Debug.Log("OnDownButton");
         DownButtonEvent?.Invoke();
     }
     private void OnUpButton() {
+        //Debug.Log("OnUpButton");
         UpButtonEvent?.Invoke();
     }
     

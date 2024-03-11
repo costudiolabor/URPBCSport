@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Kicker {
     private readonly HandlerInput _handlerInput = new ();
-    public event Action<Vector2, float> MoveMouseEvent;
+    public event Action<float, Vector2, float> MoveMouseEvent;
     public event Action<Vector2, float> UpButtonEvent;
     
     private bool startTap;
@@ -28,7 +28,10 @@ public class Kicker {
         endPosition = position;
         direction = (startPosition - endPosition).normalized;
         distance = Vector2.Distance(startPosition, endPosition);
-        MoveMouseEvent?.Invoke(direction, distance);
+
+        float difference = startPosition.x - endPosition.x;
+        
+        MoveMouseEvent?.Invoke(difference, direction, distance);
     }
     
     private void OnDownButton() => startTap = true;

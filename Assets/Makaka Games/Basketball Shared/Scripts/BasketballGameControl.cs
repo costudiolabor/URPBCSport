@@ -253,6 +253,7 @@ public class BasketballGameControl : MonoBehaviour
     private void Fail()
     {
         //DebugPrinter.Print("Fail");
+        Debug.Log("Fail");
 
         BasketballAudioControl.Instance.PlayFail();
 

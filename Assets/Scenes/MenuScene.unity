@@ -941,8 +941,8 @@ MonoBehaviour:
   buttonBasketball: {fileID: 6342757194130671509}
   buttonPenalty: {fileID: 6342757194961489229}
   scenePhoto: 1
-  sceneBasketball: 2
-  scenePenalty: 3
+  sceneBasketball: 3
+  scenePenalty: 2
 --- !u!224 &6342757194130671508
 RectTransform:
   m_ObjectHideFlags: 0

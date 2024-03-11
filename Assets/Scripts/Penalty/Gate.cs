@@ -3,9 +3,11 @@ using UnityEngine;
 
 [Serializable]
 public class Gate : ViewOperator<GateView> {
-    [SerializeField] private SpawnerBall spawnerBall;
-    private Ball _ball;
+   [SerializeField] private SpawnerBall spawnerBall;
+    private BallPenalty _ballPenalty;
     private Transform _parentBall;
+    private float _distance;
+    private Vector2 _direction;
     public event Action<Vector2, float> MoveKickEvent;  
     public event Action GoalEvent;  
     public void Initialize() {
@@ -27,15 +29,23 @@ public class Gate : ViewOperator<GateView> {
         OnSpawnBall();
     }
     private void SpawnBall() {
-        _ball = spawnerBall.GetBall();
+        _ballPenalty = spawnerBall.GetBallPenalty();
         view.IdleEvent += OnSpawnBall;
     }
     private void OnSpawnBall() => MoveKickEvent += OnMoveKick;
     private void OnMoveKick(Vector2 direction, float distance) {
+        _direction = direction;
+        _distance = distance;
+        
         view.MoveKick(direction, distance);
         MoveKickEvent -= OnMoveKick;
         view.IdleEvent -= OnSpawnBall;
     }
+    
+    private void OnKick() {
+        _ballPenalty.Kick(_direction, _distance);
+    }
+    
     public void Close() => view.Close();
     public void MoveKick(Vector2 direction, float distance) {
         MoveKickEvent?.Invoke(direction, distance);
@@ -45,11 +55,13 @@ public class Gate : ViewOperator<GateView> {
     private void Subscribe() {
         view.GetBallEvent += SpawnBall;
         view.GoalEvent += Goal;
+        view.KickEvent += OnKick;
     }  
     
     public void UnSubscribe() {
         view.GetBallEvent -= SpawnBall;
         view.GoalEvent -= Goal;
+        view.KickEvent -= OnKick;
     }
 
 }

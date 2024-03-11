@@ -248,6 +248,7 @@ public class BasketballHoopControl : MonoBehaviour
     public void RegisterSphereColliderForNet(SphereCollider sphereCollider)
     {
         //DebugPrinter.Print(basketballNetControl);
+        Debug.Log(basketballNetControl);
 
         basketballNetControl.RegisterSphereCollider(sphereCollider);
     }
@@ -255,6 +256,7 @@ public class BasketballHoopControl : MonoBehaviour
     public void AnnulSphereColliderForNet(SphereCollider sphereCollider)
     {
         //DebugPrinter.Print(basketballNetControl);
+        Debug.Log(basketballNetControl);
 
         basketballNetControl.AnnulSphereCollider(sphereCollider);
     }
