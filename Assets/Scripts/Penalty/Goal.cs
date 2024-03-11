@@ -8,7 +8,7 @@ public class Goal : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision) {
         Debug.Log("trigger");
-        var isBall = collision.gameObject.TryGetComponent(out Ball ball);
+        var isBall = collision.gameObject.TryGetComponent(out BallPenalty ball);
         if (isBall == false) return;
         Debug.Log("Ball");
         if (ball.isActive == false) return;

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEngine.XR.ARFoundation;
 
 public class EntryPenalty : MonoBehaviour {
@@ -10,8 +9,11 @@ public class EntryPenalty : MonoBehaviour {
     [SerializeField] private Gate gate;
     
     private readonly Kicker _kicker = new Kicker();
+    [SerializeField] private ShowDirection _showDirection = new ();
+    
     private void Awake() { 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Time.timeScale = 1.0f;
         main.CreateView();
         main.Initialize();
         
@@ -43,12 +45,10 @@ public class EntryPenalty : MonoBehaviour {
         
         _kicker.MoveMouseEvent += OnMoveMouse;
     }
-
-    private readonly ShowDirection _showDirection = new ();
     
-    private void OnMoveMouse(Vector2 direction, float distance) {
-        Vector3 ballPosition = gate.GetParentBall().position;
-        _showDirection.Show(ballPosition, direction, distance);
+    private void OnMoveMouse(float difference, Vector2 direction, float distance) {
+        var parentBall = gate.GetParentBall();
+        _showDirection.Show(difference, parentBall, direction, distance);
     }
     
     private void OnUpButton(Vector2 direction, float distance) {
@@ -72,7 +72,7 @@ public class EntryPenalty : MonoBehaviour {
         gate.GoalEvent -= Goal;
         _kicker.UpButtonEvent -= OnUpButton;
         
-        _kicker.MoveMouseEvent += OnMoveMouse;
+        _kicker.MoveMouseEvent -= OnMoveMouse;
         
         _kicker.UnSubscribe();
         gate.UnSubscribe();
@@ -81,17 +81,5 @@ public class EntryPenalty : MonoBehaviour {
     private void OnDestroy() {
         UnSubscribe();
         SaveBestScore();
-    }
-}
-
-[System.Serializable]
-public class ShowDirection {
-    public void Show(Vector3 ballPosition, Vector2 direction, float distance) {
-        distance /= 100;
-        var targetPosition = new Vector3(direction.x, ballPosition.y, direction.y);
-        targetPosition = (ballPosition + targetPosition) * distance;
-        
-        //Debug.Log("direction:" + direction + "  distance:" + distance);
-        Debug.DrawLine(ballPosition, targetPosition, Color.red, 0.5f); 
     }
 }

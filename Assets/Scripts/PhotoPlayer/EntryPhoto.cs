@@ -13,6 +13,7 @@ public class EntryPhoto : MonoBehaviour {
     
     private void Start() { 
        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+       Time.timeScale = 1.0f;
        main.CreateView();
        main.Initialize();
        

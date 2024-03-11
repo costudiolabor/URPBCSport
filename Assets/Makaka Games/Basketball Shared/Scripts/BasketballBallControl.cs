@@ -100,6 +100,10 @@ public class BasketballBallControl : MonoBehaviour
 					BasketballAudioControl.Instance.netSoundsIndex, 
 					false,
 					BasketballAudioControl.Instance.netAudioSource);
+				
+				// BasketballAudioControl.Instance.netSoundsIndex;
+				// BasketballAudioControl.Instance.netAudioSource;
+				// Debug.Log("audioNet");
 
 				isNetTriggerPassed = true;
 
@@ -120,7 +124,7 @@ public class BasketballBallControl : MonoBehaviour
 			//DebugPrinter.Print("failed, FailZone: " + other.gameObject.tag);
 		}
 	}
-
+	
 	private void OnCollisionEnter (Collision other)
 	{
 		if (BasketballAudioControl.Instance)

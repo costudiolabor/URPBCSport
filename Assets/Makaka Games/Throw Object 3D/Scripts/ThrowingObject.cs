@@ -160,11 +160,13 @@ public class ThrowingObject : MonoBehaviour
 
         if (isComByDefaultLoggedAtAwake)
         {
-            DebugPrinter.Print($"[Center Of Mass] by Default: {name}");
-            DebugPrinter.Print($"Vector3(" +
-                $"{rigidbody3D.centerOfMass.x}," +
-                $"{rigidbody3D.centerOfMass.y}," +
-                $"{rigidbody3D.centerOfMass.z})");
+            //DebugPrinter.Print($"[Center Of Mass] by Default: {name}");
+            Debug.Log($"[Center Of Mass] by Default: {name}");
+            //DebugPrinter.Print($"Vector3(" +
+            Debug.Log($"Vector3(" +
+                      $"{rigidbody3D.centerOfMass.x}," +
+                      $"{rigidbody3D.centerOfMass.y}," +
+                      $"{rigidbody3D.centerOfMass.z})");
         }
 
         if (isComCustomizedAtAwake)
@@ -248,6 +250,7 @@ public class ThrowingObject : MonoBehaviour
             strengthFactor.x *= inputPositionLast.y / strengthFactor.y;
 
             //DebugPrinter.Print("[Correction] strengthFactor")
+            Debug.Log("[Correction] strengthFactor");
         }
 
         strengthFactor /= screenHight;
@@ -334,7 +337,7 @@ public class ThrowingObject : MonoBehaviour
 
     public void ResetPhysicsBase()
     {
-        //Debug.Log("ResetPhysics()");
+        Debug.Log("ResetPhysics()");
 
         rigidbody3D.useGravity = false;
         rigidbody3D.velocity = Vector3.zero;
@@ -366,6 +369,7 @@ public class ThrowingObject : MonoBehaviour
     public void ResetRotation(Transform parent)
     {
         //DebugPrinter.Print(rotationByDefault.eulerAngles);
+        Debug.Log(rotationByDefault.eulerAngles);
 
         Quaternion rotationTargetTemp;
 
@@ -449,7 +453,8 @@ public class ThrowingObject : MonoBehaviour
         }
         else
         {
-            DebugPrinter.Print("Audio Data doesn't exist at index: " + index);
+            //DebugPrinter.Print("Audio Data doesn't exist at index: " + index);
+            Debug.Log("Audio Data doesn't exist at index: " + index);
         }
     }
 

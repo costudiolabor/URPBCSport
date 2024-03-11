@@ -185,7 +185,7 @@ AnimatorStateMachine:
     m_Position: {x: 480, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7252707119502896150}
-    m_Position: {x: 490, y: 280, z: 0}
+    m_Position: {x: 500, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6929057649473952912}
     m_Position: {x: 730, y: 130, z: 0}
