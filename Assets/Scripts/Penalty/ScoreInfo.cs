@@ -3,8 +3,7 @@ using UnityEngine;
 
 [Serializable]
 public class ScoreInfo : ViewOperator<ScoreInfoView> {
-    [SerializeField] private  int countScoreGoal = 1;
-    private int _currentScoreGoal;
+    private int _currentScore;
     private int _bestScore;
     private GameData _gameData = new();
     
@@ -14,12 +13,14 @@ public class ScoreInfo : ViewOperator<ScoreInfoView> {
         view.Initialize();
     }
 
-    public void SetGoal() {
-        _currentScoreGoal += countScoreGoal;
-        view.SetCurrentScore(_currentScoreGoal.ToString());
+    public int GetScore() => _currentScore; 
+    
+    public void SetGoal(int score) {
+        _currentScore += score;
+        view.SetCurrentScore(_currentScore.ToString());
     }
 
     public void SetBestScore(string text) => view.SetBestScore(text);
 
-    public void SaveBestScore() { if (_currentScoreGoal > _bestScore) _gameData.SaveBestScore(_currentScoreGoal); }
+    public void SaveBestScore() { if (_currentScore > _bestScore) _gameData.SaveBestScore(_currentScore); }
 }

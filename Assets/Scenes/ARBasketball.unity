@@ -1259,15 +1259,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825343990}
-  m_LocalRotation: {x: -0.5366262, y: -0, z: -0, w: 0.8438201}
-  m_LocalPosition: {x: 0, y: -0.22, z: 0.67}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 438158182}
   m_Father: {fileID: 18088873}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -64.909, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851050290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,7 +2110,6 @@ MonoBehaviour:
   scoreInfo:
     prefab: {fileID: 469029464714219815, guid: 591959a1a441b00499934c40717e3301, type: 3}
     viewParent: {fileID: 1954032953237981521}
-    countScoreGoal: 1
   arContent:
     arPlaneManager: {fileID: 851050294}
     arRaycastManager: {fileID: 851050292}
@@ -2119,7 +2118,7 @@ MonoBehaviour:
       type: 3}
     viewParent: {fileID: 0}
   hoop:
-    prefab: {fileID: -6463019785195978974, guid: e001ac780acd90540bdc51c980a780a7,
+    prefab: {fileID: 3710320559359360786, guid: 28568997a9f333046850721896fbea8b,
       type: 3}
     viewParent: {fileID: 0}
   spawnerBall:
@@ -2131,7 +2130,7 @@ MonoBehaviour:
     target: {fileID: 438158182}
   ballBasketball: {fileID: 0}
   parentBall: {fileID: 0}
-  timeSpawn: 2
+  timeSpawn: 1.5
 --- !u!1 &1954032953237981520
 GameObject:
   m_ObjectHideFlags: 0

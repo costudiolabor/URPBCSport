@@ -45,16 +45,20 @@ public class EntryBasketball : MonoBehaviour {
         arContent.DisableARRayCastManager();
         
         finderTarget.Close();
+        _kicker.Initialize();
+        
         SpawnBall();
         
-        _kicker.Initialize();
-        _kicker.UpButtonEvent += OnUpButton;
-        
-        _kicker.MoveMouseEvent += OnMoveMouse;
+        // _kicker.UpButtonEvent += OnUpButton;
+        // _kicker.MoveMouseEvent += OnMoveMouse;
     }
     
     private void SpawnBall() {
        ballBasketball = spawnerBall.GetBallBasketball();
+       hoop.ResetRing();
+       
+       _kicker.UpButtonEvent += OnUpButton;
+       //_kicker.MoveMouseEvent += OnMoveMouse;
     }
     
     private void OnMoveMouse(float difference, Vector2 direction, float distance) {
@@ -63,15 +67,24 @@ public class EntryBasketball : MonoBehaviour {
     }
     
     private void OnUpButton(Vector2 direction, float distance) {
+        _kicker.UpButtonEvent -= OnUpButton;
+        //_kicker.MoveMouseEvent -= OnMoveMouse;
         ballBasketball.Kick(direction, distance);
         StartCoroutine(TimerSpawn());
     }
-    
-    private void Goal() { scoreInfo.SetGoal(); }
+
+    private void Goal() {
+        var scoreGoal = 1;
+        scoreInfo.SetGoal(scoreGoal);
+        scoreGoal = scoreInfo.GetScore();
+        hoop.SetScoreBoard(scoreGoal);
+    }
     private void SaveBestScore() => scoreInfo.SaveBestScore();
     
     private void Subscribe() {
         finderTarget.SetPositionEvent += SetPositionObject;
+        
+        hoop.HitEvent += Goal;
     }  
     
     private void UnSubscribe() {
@@ -81,6 +94,8 @@ public class EntryBasketball : MonoBehaviour {
         _kicker.UpButtonEvent -= OnUpButton;
         _kicker.MoveMouseEvent -= OnMoveMouse;
         _kicker.UnSubscribe();
+
+        hoop.HitEvent -= Goal;
     }
     
     private void OnDestroy() {

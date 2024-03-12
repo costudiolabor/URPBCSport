@@ -56,7 +56,8 @@ public class EntryPenalty : MonoBehaviour {
     }
 
     private void Goal() {
-        scoreInfo.SetGoal();
+        const int scoreGoal = 1;
+        scoreInfo.SetGoal(scoreGoal);
     }
 
     private void SaveBestScore() => scoreInfo.SaveBestScore();
