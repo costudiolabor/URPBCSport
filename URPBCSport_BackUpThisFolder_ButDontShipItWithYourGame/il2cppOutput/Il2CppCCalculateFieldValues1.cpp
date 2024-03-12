@@ -5706,14 +5706,14 @@ struct LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60  : public RuntimeOb
 	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
 };
 
-// GateView/<TimerSpawn>d__21
-struct U3CTimerSpawnU3Ed__21_t205B4CEA92425FCFD862391D409AFB824436BE94  : public RuntimeObject
+// GateView/<TimerSpawn>d__23
+struct U3CTimerSpawnU3Ed__23_t9FB9E6F7AD8C7F04203849113C6B0DD734900FED  : public RuntimeObject
 {
-	// System.Int32 GateView/<TimerSpawn>d__21::<>1__state
+	// System.Int32 GateView/<TimerSpawn>d__23::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GateView/<TimerSpawn>d__21::<>2__current
+	// System.Object GateView/<TimerSpawn>d__23::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// GateView GateView/<TimerSpawn>d__21::<>4__this
+	// GateView GateView/<TimerSpawn>d__23::<>4__this
 	GateView_t057B118200766F0490118287FCDDB897F4831793* ___U3CU3E4__this_2;
 };
 
@@ -32940,12 +32940,12 @@ struct EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C  : public MonoB
 	SpawnerBall_tF26F30E236AA3A9FDC21114DAEA32D37ABA9C54E* ___spawnerBall_9;
 	// ShowDirection EntryBasketball::_showDirection
 	ShowDirection_tA3049F829F854DCA227B0EF3DC821C8565F2CE4E* ____showDirection_10;
-	// BallBasketBall EntryBasketball::ballBasketball
-	BallBasketBall_tD6E33624FCD4FB7F770C96C6573C125EC0EC0E75* ___ballBasketball_11;
-	// UnityEngine.Transform EntryBasketball::parentBall
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parentBall_12;
 	// System.Single EntryBasketball::timeSpawn
-	float ___timeSpawn_13;
+	float ___timeSpawn_11;
+	// BallBasketBall EntryBasketball::ballBasketball
+	BallBasketBall_tD6E33624FCD4FB7F770C96C6573C125EC0EC0E75* ___ballBasketball_12;
+	// UnityEngine.Transform EntryBasketball::parentBall
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parentBall_13;
 	// Kicker EntryBasketball::_kicker
 	Kicker_t3FDA5AB977B55184F8504A1C747924B4151DA7F2* ____kicker_14;
 };
@@ -34834,16 +34834,18 @@ struct GateView_t057B118200766F0490118287FCDDB897F4831793  : public View_t526E49
 	GoalKeeper_t0E55146FC7B3F917A589C1F4463D70A4F1C4FFE9* ___goalKeeper_6;
 	// UnityEngine.Transform GateView::parentBall
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parentBall_7;
+	// ActivedEffects GateView::activedEffects
+	ActivedEffects_tF1B6BC45F5F258C2CCB5F13267DB24C69283D86F* ___activedEffects_8;
 	// System.Single GateView::timeSpawn
-	float ___timeSpawn_8;
+	float ___timeSpawn_9;
 	// System.Action GateView::GetBallEvent
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___GetBallEvent_9;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___GetBallEvent_10;
 	// System.Action GateView::IdleEvent
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___IdleEvent_10;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___IdleEvent_11;
 	// System.Action GateView::GoalEvent
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___GoalEvent_11;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___GoalEvent_12;
 	// System.Action GateView::KickEvent
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___KickEvent_12;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___KickEvent_13;
 };
 
 // UnityEngine.UI.Graphic
@@ -39642,9 +39644,9 @@ struct LightConstantBuffer_tC0F49AE28C1095875E8090A9E96B3C680B000FA1_StaticField
 
 // UnityEngine.GUILayoutUtility/LayoutCache
 
-// GateView/<TimerSpawn>d__21
+// GateView/<TimerSpawn>d__23
 
-// GateView/<TimerSpawn>d__21
+// GateView/<TimerSpawn>d__23
 
 // GoalKeeper/<GetState>d__19
 
@@ -52010,7 +52012,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5203[3] =
 	static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_tFD4245312DDB186BC7BFC465880B144CFD9D8577, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_tFD4245312DDB186BC7BFC465880B144CFD9D8577, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_tFD4245312DDB186BC7BFC465880B144CFD9D8577, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5204[11] = 
 {
-	static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___main_4)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___scoreInfo_5)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___arContent_6)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___finderTarget_7)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___hoop_8)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___spawnerBall_9)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ____showDirection_10)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___ballBasketball_11)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___parentBall_12)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___timeSpawn_13)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ____kicker_14)),};
+	static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___main_4)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___scoreInfo_5)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___arContent_6)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___finderTarget_7)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___hoop_8)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___spawnerBall_9)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ____showDirection_10)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___timeSpawn_11)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___ballBasketball_12)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ___parentBall_13)),static_cast<int32_t>(offsetof(EntryBasketball_tA197A40F70BA2CEF44012540FE24BF13CE25426C, ____kicker_14)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5205[2] = 
 {
 	static_cast<int32_t>(offsetof(Hoop_t89390ED57E29E5B773791AAE96D496D24A39BD2D, ___HitEvent_3)),static_cast<int32_t>(offsetof(Hoop_t89390ED57E29E5B773791AAE96D496D24A39BD2D, ___isRing_4)),};
@@ -52049,10 +52051,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5219[7] =
 	static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ___spawnerBall_3)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ____ballPenalty_4)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ____parentBall_5)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ____distance_6)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ____direction_7)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ___MoveKickEvent_8)),static_cast<int32_t>(offsetof(Gate_tD423C3E3C6A390BF4DCC10322CBA2485840FF97A, ___GoalEvent_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5220[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_t205B4CEA92425FCFD862391D409AFB824436BE94, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_t205B4CEA92425FCFD862391D409AFB824436BE94, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__21_t205B4CEA92425FCFD862391D409AFB824436BE94, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5221[9] = 
+	static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__23_t9FB9E6F7AD8C7F04203849113C6B0DD734900FED, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__23_t9FB9E6F7AD8C7F04203849113C6B0DD734900FED, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CTimerSpawnU3Ed__23_t9FB9E6F7AD8C7F04203849113C6B0DD734900FED, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5221[10] = 
 {
-	static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___goal_4)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___playerPenalty_5)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___goalKeeper_6)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___parentBall_7)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___timeSpawn_8)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___GetBallEvent_9)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___IdleEvent_10)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___GoalEvent_11)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___KickEvent_12)),};
+	static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___goal_4)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___playerPenalty_5)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___goalKeeper_6)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___parentBall_7)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___activedEffects_8)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___timeSpawn_9)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___GetBallEvent_10)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___IdleEvent_11)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___GoalEvent_12)),static_cast<int32_t>(offsetof(GateView_t057B118200766F0490118287FCDDB897F4831793, ___KickEvent_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5222[2] = 
 {
 	static_cast<int32_t>(offsetof(Goal_tA07CAE5E13E53F9356FD032516AB76F0E8B73DB3, ___audioSource_4)),static_cast<int32_t>(offsetof(Goal_tA07CAE5E13E53F9356FD032516AB76F0E8B73DB3, ___GoalEvent_5)),};
