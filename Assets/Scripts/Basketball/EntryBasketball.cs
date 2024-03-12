@@ -10,11 +10,10 @@ public class EntryBasketball : MonoBehaviour {
     [SerializeField] private Hoop hoop;
     [SerializeField] private SpawnerBall spawnerBall;
     [SerializeField] private ShowDirection _showDirection = new ();
-    [SerializeField] private BallBasketBall ballBasketball;
-    [SerializeField] private Transform parentBall;
-    
     [SerializeField] private float timeSpawn = 2.0f;
     
+    private BallBasketBall ballBasketball;
+    private Transform parentBall;
     private readonly Kicker _kicker = new Kicker();
 
     private void Awake() {

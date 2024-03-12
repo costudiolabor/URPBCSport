@@ -50,8 +50,11 @@ public class Gate : ViewOperator<GateView> {
     public void MoveKick(Vector2 direction, float distance) {
         MoveKickEvent?.Invoke(direction, distance);
     }
-    private void Goal() => GoalEvent?.Invoke();
-    
+    private void Goal() {
+        view.ShowEffects();
+        GoalEvent?.Invoke();
+    }
+
     private void Subscribe() {
         view.GetBallEvent += SpawnBall;
         view.GoalEvent += Goal;

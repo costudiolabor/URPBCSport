@@ -490,7 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisRigidbody: {fileID: 1032659169053341529}
   directionObject: {fileID: 2697975691773352880}
-  maxSpeedBall: 0.01
+  maxSpeedBall: 0.015
   timeLife: 10
 --- !u!114 &7953454538350154263
 MonoBehaviour:
