@@ -10,8 +10,6 @@ Material:
   m_Name: Skin_Head
   m_Shader: {fileID: -6465566751694194690, guid: 78f55a1c21f981b41a31927d47d39f10,
     type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
@@ -22,7 +20,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -179,13 +176,13 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Eye_AO: 0.6
+    - _Eye_AO: 0.8
     - _Eyebrow_Hair_Tint_Influence: 0
-    - _Freckles: 1
+    - _Freckles: 1.4
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Lipstick_Alpha: 0
+    - _Lipstick_Alpha: 0.1
     - _Make_Up_Alpha: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
@@ -194,7 +191,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SSS: 1
-    - _Skin_Smoothness_Offset: 0.6190741
+    - _Skin_Smoothness_Offset: 0.4
     - _Skin_Tint_Alpha: 0.5
     - _Skin_Tint_Influence: 0.5
     - _Smoothness: 0.5
@@ -209,9 +206,9 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Eyebrow_Tint: {r: 0.3764706, g: 0.14509805, b: 0.043137256, a: 1}
+    - _Eyebrow_Tint: {r: 0, g: 0, b: 0, a: 1}
     - _Hair_Tint: {r: 0.3764706, g: 0.14509805, b: 0.043137256, a: 1}
-    - _Lips_Tint: {r: 0.74509805, g: 0, b: 0, a: 1}
+    - _Lips_Tint: {r: 0.5943396, g: 0, b: 0, a: 1}
     - _Skin_Tint: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
