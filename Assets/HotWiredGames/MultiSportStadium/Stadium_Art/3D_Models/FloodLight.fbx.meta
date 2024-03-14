@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 9ed36970c6b6b2445a31fdc5ed97b581
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: -2149395525702153095
+    second: Cricket_Wicket_B|Cricket_Wicket_A|Take 001|BaseLayer
+  - first:
+      74: -3133789239879061561
+    second: Cricket_Wicket_B|Cricket_Wicket_B|Take 001|BaseLayer
+  - first:
+      74: -2720063944699712178
+    second: Cricket_Wicket_B|Divider_Rails_Lower|Take 001|BaseLayer
+  - first:
+      74: -7673802977108464010
+    second: Cricket_Wicket_B|Divider_Rails_Upper|Take 001|BaseLayer
+  - first:
+      74: 2282822921654225098
+    second: Cricket_Wicket_B|Fence_High_00|Take 001|BaseLayer
+  - first:
+      74: 4262692807330656412
+    second: Cricket_Wicket_B|Fence_High_01|Take 001|BaseLayer
+  - first:
+      74: -947882461454245194
+    second: Cricket_Wicket_B|Fence_High_02|Take 001|BaseLayer
+  - first:
+      74: 2121608189982788092
+    second: Cricket_Wicket_B|Fence_High_03|Take 001|BaseLayer
+  - first:
+      74: 6296642373022125498
+    second: Cricket_Wicket_B|Fence_High_04|Take 001|BaseLayer
+  - first:
+      74: -1660932209273263904
+    second: Cricket_Wicket_B|Fence_High_05|Take 001|BaseLayer
+  - first:
+      74: 6093125367412728861
+    second: Cricket_Wicket_B|Fence_High_06|Take 001|BaseLayer
+  - first:
+      74: -8438545764051785490
+    second: Cricket_Wicket_B|Fence_High_07|Take 001|BaseLayer
+  - first:
+      74: -814336573945011385
+    second: Cricket_Wicket_B|Fence_Low_00|Take 001|BaseLayer
+  - first:
+      74: 4084187784571107459
+    second: Cricket_Wicket_B|Fence_Low_01|Take 001|BaseLayer
+  - first:
+      74: -7885013747262896163
+    second: Cricket_Wicket_B|Fence_Low_02|Take 001|BaseLayer
+  - first:
+      74: -22986897924678065
+    second: Cricket_Wicket_B|Fence_Low_03|Take 001|BaseLayer
+  - first:
+      74: -4230198470688028922
+    second: Cricket_Wicket_B|Fence_Low_04|Take 001|BaseLayer
+  - first:
+      74: -5293237920837481294
+    second: Cricket_Wicket_B|Fence_Low_05|Take 001|BaseLayer
+  - first:
+      74: -5029216820935645737
+    second: Cricket_Wicket_B|Fence_Low_06|Take 001|BaseLayer
+  - first:
+      74: 1133698438256647958
+    second: Cricket_Wicket_B|Fence_Low_07|Take 001|BaseLayer
+  - first:
+      74: 8799956757611022350
+    second: Cricket_Wicket_B|Fence_Low_08|Take 001|BaseLayer
+  - first:
+      74: 6853241996666765627
+    second: Cricket_Wicket_B|Fence_Low_09|Take 001|BaseLayer
+  - first:
+      74: 3124605427906368666
+    second: Cricket_Wicket_B|Fence_Low_10|Take 001|BaseLayer
+  - first:
+      74: 3639872641004458261
+    second: Cricket_Wicket_B|Fence_Low_11|Take 001|BaseLayer
+  - first:
+      74: 9031947167540072904
+    second: Cricket_Wicket_B|Fence_Low_12|Take 001|BaseLayer
+  - first:
+      74: -7068222231328187706
+    second: Cricket_Wicket_B|Fence_Low_13|Take 001|BaseLayer
+  - first:
+      74: -2444308468227836677
+    second: Cricket_Wicket_B|Fence_Low_14|Take 001|BaseLayer
+  - first:
+      74: 8207820897628315839
+    second: Cricket_Wicket_B|Fence_Low_15|Take 001|BaseLayer
+  - first:
+      74: 1792860500068936728
+    second: Cricket_Wicket_B|Fence_Low_16|Take 001|BaseLayer
+  - first:
+      74: 1628684871636388019
+    second: Cricket_Wicket_B|Fence_Low_17|Take 001|BaseLayer
+  - first:
+      74: -2666942904940268745
+    second: Cricket_Wicket_B|FloodLights_Body|Take 001|BaseLayer
+  - first:
+      74: -7521849728977896530
+    second: Cricket_Wicket_B|GoalFrame_A|Take 001|BaseLayer
+  - first:
+      74: 4756394162790324589
+    second: Cricket_Wicket_B|GoalFrame_B|Take 001|BaseLayer
+  - first:
+      74: -1172378599661371911
+    second: Cricket_Wicket_B|GoalNet_A_Rear|Take 001|BaseLayer
+  - first:
+      74: -8322107307076831329
+    second: Cricket_Wicket_B|GoalNet_B_Back|Take 001|BaseLayer
+  - first:
+      74: -5116701584253075978
+    second: Cricket_Wicket_B|HoardingBottom|Take 001|BaseLayer
+  - first:
+      74: -6234709716096803420
+    second: Cricket_Wicket_B|HoardingTop|Take 001|BaseLayer
+  - first:
+      74: 845686734004825463
+    second: Cricket_Wicket_B|HockeyNet_Frame_A|Take 001|BaseLayer
+  - first:
+      74: 7479739882934375939
+    second: Cricket_Wicket_B|HockeyNet_Frame_B|Take 001|BaseLayer
+  - first:
+      74: 8056211873872010589
+    second: Cricket_Wicket_B|Roof_A_B_C_Canopy_Upper|Take 001|BaseLayer
+  - first:
+      74: -6711181840177815125
+    second: Cricket_Wicket_B|Roof_A_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: -8533551165643485350
+    second: Cricket_Wicket_B|Roof_B_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: 239007728601836404
+    second: Cricket_Wicket_B|Roof_C_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: -1188071792682119295
+    second: Cricket_Wicket_B|Rugby_Post_A.001|Take 001|BaseLayer
+  - first:
+      74: -1194300449882220386
+    second: Cricket_Wicket_B|Rugby_Post_B.001|Take 001|BaseLayer
+  - first:
+      74: -4127414074959225206
+    second: Cricket_Wicket_B|Rugby_Post_Collision_A|Take 001|BaseLayer
+  - first:
+      74: 6075924850495485019
+    second: Cricket_Wicket_B|Rugby_Post_Collision_B|Take 001|BaseLayer
+  - first:
+      74: -5674868542433330479
+    second: Cricket_Wicket_B|ScoreBoard_Body_01|Take 001|BaseLayer
+  - first:
+      74: -8648648373124637049
+    second: Cricket_Wicket_B|ScoreBoard_Body_02|Take 001|BaseLayer
+  - first:
+      74: -5748228190301044175
+    second: Cricket_Wicket_B|ScoreBoard_Screen_Small_01|Take 001|BaseLayer
+  - first:
+      74: 5972555156268287835
+    second: Cricket_Wicket_B|ScoreBoard_Screen_Small_02|Take 001|BaseLayer
+  - first:
+      74: 562608253012717087
+    second: Cricket_Wicket_B|Seating_01_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: -302382919414889667
+    second: Cricket_Wicket_B|Seating_01_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: 7276895317785938418
+    second: Cricket_Wicket_B|Seating_01_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: -6593205611214097397
+    second: Cricket_Wicket_B|Seating_01_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: 5686469911114981448
+    second: Cricket_Wicket_B|Seating_01_HIGH_05|Take 001|BaseLayer
+  - first:
+      74: -3583581366648016879
+    second: Cricket_Wicket_B|Seating_01_HIGH_06|Take 001|BaseLayer
+  - first:
+      74: 2073007746688318930
+    second: Cricket_Wicket_B|Seating_01_HIGH_07|Take 001|BaseLayer
+  - first:
+      74: -7598867199347460788
+    second: Cricket_Wicket_B|Seating_01_HIGH_08|Take 001|BaseLayer
+  - first:
+      74: 2024142589283675693
+    second: Cricket_Wicket_B|Seating_01_LOW_01|Take 001|BaseLayer
+  - first:
+      74: -314355641150857426
+    second: Cricket_Wicket_B|Seating_01_LOW_02|Take 001|BaseLayer
+  - first:
+      74: 8016487384076794703
+    second: Cricket_Wicket_B|Seating_01_LOW_03|Take 001|BaseLayer
+  - first:
+      74: 7382558874952803570
+    second: Cricket_Wicket_B|Seating_01_LOW_04|Take 001|BaseLayer
+  - first:
+      74: -498288371710498181
+    second: Cricket_Wicket_B|Seating_01_LOW_05|Take 001|BaseLayer
+  - first:
+      74: 109651335155267762
+    second: Cricket_Wicket_B|Seating_01_LOW_06|Take 001|BaseLayer
+  - first:
+      74: -3531255163197120959
+    second: Cricket_Wicket_B|Seating_01_LOW_07|Take 001|BaseLayer
+  - first:
+      74: -4556098296457172927
+    second: Cricket_Wicket_B|Seating_01_LOW_08|Take 001|BaseLayer
+  - first:
+      74: 4146850676963571446
+    second: Cricket_Wicket_B|Seating_02_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: 6756172626831358796
+    second: Cricket_Wicket_B|Seating_02_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: -8264878275508038632
+    second: Cricket_Wicket_B|Seating_02_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: 7051160635684652448
+    second: Cricket_Wicket_B|Seating_02_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: -621825327809810614
+    second: Cricket_Wicket_B|Seating_02_HIGH_05|Take 001|BaseLayer
+  - first:
+      74: -6504087142659552493
+    second: Cricket_Wicket_B|Seating_02_HIGH_06|Take 001|BaseLayer
+  - first:
+      74: 998548663322004630
+    second: Cricket_Wicket_B|Seating_02_LOW_01|Take 001|BaseLayer
+  - first:
+      74: 7024605261562527485
+    second: Cricket_Wicket_B|Seating_02_LOW_02|Take 001|BaseLayer
+  - first:
+      74: 477960389642673795
+    second: Cricket_Wicket_B|Seating_02_LOW_03|Take 001|BaseLayer
+  - first:
+      74: 696211504151940613
+    second: Cricket_Wicket_B|Seating_02_LOW_04|Take 001|BaseLayer
+  - first:
+      74: 8892659784132237462
+    second: Cricket_Wicket_B|Seating_02_LOW_05|Take 001|BaseLayer
+  - first:
+      74: -3391746197061837771
+    second: Cricket_Wicket_B|Seating_02_LOW_06|Take 001|BaseLayer
+  - first:
+      74: 4968253324839827216
+    second: Cricket_Wicket_B|Seating_Corner_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: -2674283070029891516
+    second: Cricket_Wicket_B|Seating_Corner_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: -4316842302869256948
+    second: Cricket_Wicket_B|Seating_Corner_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: -1611659737558431309
+    second: Cricket_Wicket_B|Seating_Corner_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: -6914624134893577439
+    second: Cricket_Wicket_B|Seating_Corner_LOW_01|Take 001|BaseLayer
+  - first:
+      74: 115518062170107241
+    second: Cricket_Wicket_B|Seating_Corner_LOW_02|Take 001|BaseLayer
+  - first:
+      74: -4968283472449728134
+    second: Cricket_Wicket_B|Seating_Corner_LOW_03|Take 001|BaseLayer
+  - first:
+      74: 1433382593422666957
+    second: Cricket_Wicket_B|Seating_Corner_LOW_04|Take 001|BaseLayer
+  - first:
+      74: -7497580389525099780
+    second: Cricket_Wicket_B|Spotlight_Body|Take 001|BaseLayer
+  - first:
+      74: -7908940090352701734
+    second: Cricket_Wicket_B|Stairs_A|Take 001|BaseLayer
+  - first:
+      74: -5214174301829176295
+    second: Cricket_Wicket_B|Stairs_B|Take 001|BaseLayer
+  - first:
+      74: -5719955413661816889
+    second: Cricket_Wicket_B|Stand_A|Take 001|BaseLayer
+  - first:
+      74: -7834003969781947994
+    second: Cricket_Wicket_B|Stand_B|Take 001|BaseLayer
+  - first:
+      74: 2173295509511396142
+    second: Cricket_Wicket_B|Stand_C|Take 001|BaseLayer
+  - first:
+      74: -2651700625255012886
+    second: Cricket_Wicket_A|Cricket_Wicket_A|Take 001|BaseLayer
+  - first:
+      74: 1783083297947810519
+    second: Cricket_Wicket_A|Cricket_Wicket_B|Take 001|BaseLayer
+  - first:
+      74: -6168444796609482739
+    second: Cricket_Wicket_A|Divider_Rails_Lower|Take 001|BaseLayer
+  - first:
+      74: 2055998842644183859
+    second: Cricket_Wicket_A|Divider_Rails_Upper|Take 001|BaseLayer
+  - first:
+      74: -8890349331857523422
+    second: Cricket_Wicket_A|Fence_High_00|Take 001|BaseLayer
+  - first:
+      74: 3499933696467049545
+    second: Cricket_Wicket_A|Fence_High_01|Take 001|BaseLayer
+  - first:
+      74: -8308478028667240639
+    second: Cricket_Wicket_A|Fence_High_02|Take 001|BaseLayer
+  - first:
+      74: -6687422854418189095
+    second: Cricket_Wicket_A|Fence_High_03|Take 001|BaseLayer
+  - first:
+      74: 1931644428193616159
+    second: Cricket_Wicket_A|Fence_High_04|Take 001|BaseLayer
+  - first:
+      74: 9040129828550092979
+    second: Cricket_Wicket_A|Fence_High_05|Take 001|BaseLayer
+  - first:
+      74: -1696918683013450743
+    second: Cricket_Wicket_A|Fence_High_06|Take 001|BaseLayer
+  - first:
+      74: 2094880600846287956
+    second: Cricket_Wicket_A|Fence_High_07|Take 001|BaseLayer
+  - first:
+      74: -6277975547996762671
+    second: Cricket_Wicket_A|Fence_Low_00|Take 001|BaseLayer
+  - first:
+      74: -5412574461567986065
+    second: Cricket_Wicket_A|Fence_Low_01|Take 001|BaseLayer
+  - first:
+      74: -7274234009190567809
+    second: Cricket_Wicket_A|Fence_Low_02|Take 001|BaseLayer
+  - first:
+      74: -3482204425189462590
+    second: Cricket_Wicket_A|Fence_Low_03|Take 001|BaseLayer
+  - first:
+      74: 5630906169806624477
+    second: Cricket_Wicket_A|Fence_Low_04|Take 001|BaseLayer
+  - first:
+      74: -4029068123902744328
+    second: Cricket_Wicket_A|Fence_Low_05|Take 001|BaseLayer
+  - first:
+      74: -7788222304252522237
+    second: Cricket_Wicket_A|Fence_Low_06|Take 001|BaseLayer
+  - first:
+      74: 1916769041745993179
+    second: Cricket_Wicket_A|Fence_Low_07|Take 001|BaseLayer
+  - first:
+      74: -165410150112913197
+    second: Cricket_Wicket_A|Fence_Low_08|Take 001|BaseLayer
+  - first:
+      74: -8483298207111824806
+    second: Cricket_Wicket_A|Fence_Low_09|Take 001|BaseLayer
+  - first:
+      74: -8357134568373572036
+    second: Cricket_Wicket_A|Fence_Low_10|Take 001|BaseLayer
+  - first:
+      74: -8106661561120782623
+    second: Cricket_Wicket_A|Fence_Low_11|Take 001|BaseLayer
+  - first:
+      74: -4199122716153045217
+    second: Cricket_Wicket_A|Fence_Low_12|Take 001|BaseLayer
+  - first:
+      74: 5233753916190293550
+    second: Cricket_Wicket_A|Fence_Low_13|Take 001|BaseLayer
+  - first:
+      74: 5002414930566300986
+    second: Cricket_Wicket_A|Fence_Low_14|Take 001|BaseLayer
+  - first:
+      74: 6648953166212637362
+    second: Cricket_Wicket_A|Fence_Low_15|Take 001|BaseLayer
+  - first:
+      74: -2481691706884653998
+    second: Cricket_Wicket_A|Fence_Low_16|Take 001|BaseLayer
+  - first:
+      74: -8488804670760140179
+    second: Cricket_Wicket_A|Fence_Low_17|Take 001|BaseLayer
+  - first:
+      74: -8328758890484545995
+    second: Cricket_Wicket_A|FloodLights_Body|Take 001|BaseLayer
+  - first:
+      74: -1112064632232413268
+    second: Cricket_Wicket_A|GoalFrame_A|Take 001|BaseLayer
+  - first:
+      74: -5340904342863063504
+    second: Cricket_Wicket_A|GoalFrame_B|Take 001|BaseLayer
+  - first:
+      74: -1744169583375456338
+    second: Cricket_Wicket_A|GoalNet_A_Rear|Take 001|BaseLayer
+  - first:
+      74: 6402053607759944509
+    second: Cricket_Wicket_A|GoalNet_B_Back|Take 001|BaseLayer
+  - first:
+      74: -3731618988520262286
+    second: Cricket_Wicket_A|HoardingBottom|Take 001|BaseLayer
+  - first:
+      74: -8957273290068552673
+    second: Cricket_Wicket_A|HoardingTop|Take 001|BaseLayer
+  - first:
+      74: -4558246896397051754
+    second: Cricket_Wicket_A|HockeyNet_Frame_A|Take 001|BaseLayer
+  - first:
+      74: -8279649732555638332
+    second: Cricket_Wicket_A|HockeyNet_Frame_B|Take 001|BaseLayer
+  - first:
+      74: -4214087425712976867
+    second: Cricket_Wicket_A|Roof_A_B_C_Canopy_Upper|Take 001|BaseLayer
+  - first:
+      74: -404132154861611864
+    second: Cricket_Wicket_A|Roof_A_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: 966155575809481431
+    second: Cricket_Wicket_A|Roof_B_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: 4713754161051971568
+    second: Cricket_Wicket_A|Roof_C_Rear_Cover|Take 001|BaseLayer
+  - first:
+      74: 6009289974405590877
+    second: Cricket_Wicket_A|Rugby_Post_A.001|Take 001|BaseLayer
+  - first:
+      74: -4783779736750700672
+    second: Cricket_Wicket_A|Rugby_Post_B.001|Take 001|BaseLayer
+  - first:
+      74: 4430098788078311189
+    second: Cricket_Wicket_A|Rugby_Post_Collision_A|Take 001|BaseLayer
+  - first:
+      74: -3989649060878526793
+    second: Cricket_Wicket_A|Rugby_Post_Collision_B|Take 001|BaseLayer
+  - first:
+      74: 2720161759098447823
+    second: Cricket_Wicket_A|ScoreBoard_Body_01|Take 001|BaseLayer
+  - first:
+      74: -9171531181426516498
+    second: Cricket_Wicket_A|ScoreBoard_Body_02|Take 001|BaseLayer
+  - first:
+      74: -1719653032851366627
+    second: Cricket_Wicket_A|ScoreBoard_Screen_Small_01|Take 001|BaseLayer
+  - first:
+      74: -5896891110810387082
+    second: Cricket_Wicket_A|ScoreBoard_Screen_Small_02|Take 001|BaseLayer
+  - first:
+      74: 3243832968707816693
+    second: Cricket_Wicket_A|Seating_01_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: -7858757652297279517
+    second: Cricket_Wicket_A|Seating_01_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: 2365775354715195513
+    second: Cricket_Wicket_A|Seating_01_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: 3919452834599101859
+    second: Cricket_Wicket_A|Seating_01_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: -4436421603737543503
+    second: Cricket_Wicket_A|Seating_01_HIGH_05|Take 001|BaseLayer
+  - first:
+      74: -8678791944628919809
+    second: Cricket_Wicket_A|Seating_01_HIGH_06|Take 001|BaseLayer
+  - first:
+      74: -3664335314681279329
+    second: Cricket_Wicket_A|Seating_01_HIGH_07|Take 001|BaseLayer
+  - first:
+      74: -56246539546525043
+    second: Cricket_Wicket_A|Seating_01_HIGH_08|Take 001|BaseLayer
+  - first:
+      74: -4555370877756388215
+    second: Cricket_Wicket_A|Seating_01_LOW_01|Take 001|BaseLayer
+  - first:
+      74: 2003000470935401933
+    second: Cricket_Wicket_A|Seating_01_LOW_02|Take 001|BaseLayer
+  - first:
+      74: 3591972604887117937
+    second: Cricket_Wicket_A|Seating_01_LOW_03|Take 001|BaseLayer
+  - first:
+      74: -6101100416532590643
+    second: Cricket_Wicket_A|Seating_01_LOW_04|Take 001|BaseLayer
+  - first:
+      74: 4316548804360916209
+    second: Cricket_Wicket_A|Seating_01_LOW_05|Take 001|BaseLayer
+  - first:
+      74: -1991784697568023189
+    second: Cricket_Wicket_A|Seating_01_LOW_06|Take 001|BaseLayer
+  - first:
+      74: -5713134013869324202
+    second: Cricket_Wicket_A|Seating_01_LOW_07|Take 001|BaseLayer
+  - first:
+      74: -6325526234586443758
+    second: Cricket_Wicket_A|Seating_01_LOW_08|Take 001|BaseLayer
+  - first:
+      74: -4070009715700063780
+    second: Cricket_Wicket_A|Seating_02_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: -9020113762904558083
+    second: Cricket_Wicket_A|Seating_02_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: 570245895977296304
+    second: Cricket_Wicket_A|Seating_02_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: -1694760617512933260
+    second: Cricket_Wicket_A|Seating_02_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: 3989933361437341898
+    second: Cricket_Wicket_A|Seating_02_HIGH_05|Take 001|BaseLayer
+  - first:
+      74: 682101472610045711
+    second: Cricket_Wicket_A|Seating_02_HIGH_06|Take 001|BaseLayer
+  - first:
+      74: -3519497724637909634
+    second: Cricket_Wicket_A|Seating_02_LOW_01|Take 001|BaseLayer
+  - first:
+      74: -4527274900919708711
+    second: Cricket_Wicket_A|Seating_02_LOW_02|Take 001|BaseLayer
+  - first:
+      74: -2366032781150619585
+    second: Cricket_Wicket_A|Seating_02_LOW_03|Take 001|BaseLayer
+  - first:
+      74: -5761100304087136330
+    second: Cricket_Wicket_A|Seating_02_LOW_04|Take 001|BaseLayer
+  - first:
+      74: 8805154054854272682
+    second: Cricket_Wicket_A|Seating_02_LOW_05|Take 001|BaseLayer
+  - first:
+      74: 2979440056739080286
+    second: Cricket_Wicket_A|Seating_02_LOW_06|Take 001|BaseLayer
+  - first:
+      74: 2415093928712111985
+    second: Cricket_Wicket_A|Seating_Corner_HIGH_01|Take 001|BaseLayer
+  - first:
+      74: 3592515237154422627
+    second: Cricket_Wicket_A|Seating_Corner_HIGH_02|Take 001|BaseLayer
+  - first:
+      74: 1973997789922521378
+    second: Cricket_Wicket_A|Seating_Corner_HIGH_03|Take 001|BaseLayer
+  - first:
+      74: -2816095679131001103
+    second: Cricket_Wicket_A|Seating_Corner_HIGH_04|Take 001|BaseLayer
+  - first:
+      74: -3590604624375141971
+    second: Cricket_Wicket_A|Seating_Corner_LOW_01|Take 001|BaseLayer
+  - first:
+      74: 1043223667117177252
+    second: Cricket_Wicket_A|Seating_Corner_LOW_02|Take 001|BaseLayer
+  - first:
+      74: 2809412019052243248
+    second: Cricket_Wicket_A|Seating_Corner_LOW_03|Take 001|BaseLayer
+  - first:
+      74: -4459385602003068310
+    second: Cricket_Wicket_A|Seating_Corner_LOW_04|Take 001|BaseLayer
+  - first:
+      74: -6253253920673350533
+    second: Cricket_Wicket_A|Spotlight_Body|Take 001|BaseLayer
+  - first:
+      74: 2776219660892908885
+    second: Cricket_Wicket_A|Stairs_A|Take 001|BaseLayer
+  - first:
+      74: 6467424892900911776
+    second: Cricket_Wicket_A|Stairs_B|Take 001|BaseLayer
+  - first:
+      74: 1813090943443884413
+    second: Cricket_Wicket_A|Stand_A|Take 001|BaseLayer
+  - first:
+      74: 2783565809791170698
+    second: Cricket_Wicket_A|Stand_B|Take 001|BaseLayer
+  - first:
+      74: 6036351401886838177
+    second: Cricket_Wicket_A|Stand_C|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
