@@ -57,10 +57,22 @@ public class ScaleRotate : MonoBehaviour {
           transformObject.localScale.y + valueScale, transformObject.localScale.z + valueScale);
       bool isMin = (result.x > minScale); 
       bool isMax = (maxScale > result.x);
-      if (isMin & isMax) {
+   
+      if (isMin) {
           transformObject.localScale = result;
       }
-      Debug.Log(" scale " + transformObject.localScale.x);
+      else {
+          transformObject.localScale = new Vector3(minScale, minScale, minScale);
+          return;
+      }
+      
+      if (isMax) {
+          transformObject.localScale = result;
+      }
+      else {
+          transformObject.localScale = new Vector3(maxScale, maxScale, maxScale);
+          return;
+      }
   }
 
   private void Rotate(float angle) {
