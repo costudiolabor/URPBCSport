@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
-public class EntryStadium : MonoBehaviour {
+public class Entry : MonoBehaviour {
+    [SerializeField] private Main main;
     [SerializeField] private ARContent arContent;
     [SerializeField] private FinderTarget finderTarget; 
     [SerializeField] private ARObject arObject;
     
-    private void Start() { 
+    private void Awake() { 
        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+       main.CreateView();
+       main.Initialize();
        Time.timeScale = 1.0f;
        
        arObject.CreateViewClosed();
@@ -38,6 +41,7 @@ public class EntryStadium : MonoBehaviour {
     }  
     
     private void UnSubscribe() {
+        main.UnSubscribe();
         finderTarget.UnSubscribe();
         finderTarget.SetPositionEvent -= SetPositionObject;
     }
