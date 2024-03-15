@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: -8195432623145401220, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8125197348456010774, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}
@@ -1465,7 +1465,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}
       propertyPath: m_Name
-      value: Stadium_All
+      value: Stadium_Assembled
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}
@@ -1630,7 +1630,7 @@ PrefabInstance:
     - target: {fileID: 2489131097917111695, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2651294137225266331, guid: 36c7af13dab23824aa2b248179ccc9e8,
         type: 3}

@@ -76,6 +76,7 @@ public class ScaleRotate : MonoBehaviour {
   }
 
   private void Rotate(float angle) {
+      return;
       transformObject.Rotate(0, angle, 0);
   }
   
