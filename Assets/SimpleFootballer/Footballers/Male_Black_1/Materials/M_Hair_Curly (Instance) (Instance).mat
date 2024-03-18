@@ -240,8 +240,8 @@ Material:
     - _SecondarySpecular: 1
     - _SecondarySpecularShift: 0.245
     - _Smoothness: 0.5
-    - _SmoothnessMax: 0
-    - _SmoothnessMin: 0
+    - _SmoothnessMax: 0.4
+    - _SmoothnessMin: 0.2
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _Specular: 0
@@ -294,7 +294,7 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
-    - _Hair_Color: {r: 0.23584908, g: 0.07179163, b: 0.052287295, a: 1}
+    - _Hair_Color: {r: 0.2924528, g: 0.09398172, b: 0.07035421, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 0.8207547, g: 0.73543143, b: 0.6929957, a: 1}
