@@ -8,16 +8,16 @@ public class Menu : MonoBehaviour {
     [SerializeField] private Button buttonStadium;
     [SerializeField] private Button buttonARCARD;
     [SerializeField] private Button buttonARCARD2;
-    [SerializeField] private Button buttonCARD;
+    // [SerializeField] private Button buttonCARD;
     [SerializeField] private Button buttonBasketball;
 
-    [SerializeField] private int scenePhoto;
-    [SerializeField] private int scenePenalty;
+    [SerializeField] private int sceneBasketball;
     [SerializeField] private int sceneStadium;
     [SerializeField] private int sceneARCARD;
     [SerializeField] private int sceneARCARD2;
-    [SerializeField] private int sceneCARD;
-    [SerializeField] private int sceneBasketball;
+    //[SerializeField] private int sceneCARD;
+    [SerializeField] private int scenePhoto;
+    [SerializeField] private int scenePenalty;
     
     private void Awake() {
         buttonPhoto.onClick.AddListener(OnPhoto);
@@ -25,7 +25,7 @@ public class Menu : MonoBehaviour {
         buttonPenalty.onClick.AddListener(OnPenalty);
         buttonARCARD.onClick.AddListener(ARCARD);
         buttonARCARD2.onClick.AddListener(ARCARD2);
-        buttonCARD.onClick.AddListener(CARD);
+        // buttonCARD.onClick.AddListener(CARD);
         buttonStadium.onClick.AddListener(OnStadium);
     }
 
@@ -49,9 +49,9 @@ public class Menu : MonoBehaviour {
         SceneManager.LoadScene(sceneARCARD2);
     }
     
-    private void CARD() {
-        SceneManager.LoadScene(sceneCARD);
-    }
+    // private void CARD() {
+    //     SceneManager.LoadScene(sceneCARD);
+    // }
     
     private void OnStadium() {
         SceneManager.LoadScene(sceneStadium);

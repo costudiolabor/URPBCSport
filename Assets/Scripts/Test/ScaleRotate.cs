@@ -5,6 +5,7 @@ public class ScaleRotate : MonoBehaviour {
     [SerializeField] private float maxScale = 3;
     [SerializeField] private float minAngle = 2;
     [SerializeField] private float stepScale = 0.001f;
+    [SerializeField] private bool isRotate = false;
 
     private float _lastDistance;
     private bool _isBeginTouch;
@@ -76,8 +77,6 @@ public class ScaleRotate : MonoBehaviour {
   }
 
   private void Rotate(float angle) {
-      return;
-      transformObject.Rotate(0, angle, 0);
+      if (isRotate) transformObject.Rotate(0, angle, 0);
   }
-  
 }

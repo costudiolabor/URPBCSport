@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EntryMain : MonoBehaviour {
     [SerializeField] private Main main;
-    [SerializeField] private ARObject arObject;
+    //[SerializeField] private ARObject arObject;
     
     private void Awake() { 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
@@ -10,7 +10,7 @@ public class EntryMain : MonoBehaviour {
         main.CreateView();
         main.Initialize();
         
-        arObject.CreateView();
+        // arObject.CreateView();
         Subscribe();
     }
     

@@ -366,6 +366,7 @@ MonoBehaviour:
   maxScale: 1.5
   minAngle: 2
   stepScale: 0.001
+  isRotate: 0
 --- !u!1 &5371261675561536993
 GameObject:
   m_ObjectHideFlags: 0

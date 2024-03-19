@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataCharacterCustomize : MonoBehaviour
-{
-
-
-    private string dataCharacterCustomize = "";
+public class DataCharacterCustomize : MonoBehaviour {
+   // private string dataCharacterCustomize = "";
 }

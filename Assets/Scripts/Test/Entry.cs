@@ -3,7 +3,8 @@ using UnityEngine.XR.ARFoundation;
 
 public class Entry : MonoBehaviour {
     [SerializeField] private Main main;
-    [SerializeField] private ARContent arContent;
+    [SerializeField] private ChangeAR_3D changeAR3D;
+    [SerializeField] private ARComponents arComponents;
     [SerializeField] private FinderTarget finderTarget; 
     [SerializeField] private ARObject arObject;
     
@@ -11,12 +12,16 @@ public class Entry : MonoBehaviour {
        Screen.sleepTimeout = SleepTimeout.NeverSleep;
        main.CreateView();
        main.Initialize();
+       
+       changeAR3D.CreateViewClosed();
+       changeAR3D.Initialize();
+       
        Time.timeScale = 1.0f;
        
        arObject.CreateViewClosed();
        arObject.Initialize();
        
-       ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
+       ARRaycastManager arRaycastManager = arComponents.GetARRaycastManager();
        finderTarget.CreateView();
        finderTarget.SetRayCastManager(arRaycastManager);
        finderTarget.Initialize();
@@ -28,10 +33,16 @@ public class Entry : MonoBehaviour {
         arObject.SetPositionPlayer(position);
         arObject.Open();
         
-        arContent.DisableARPlaneManager();
-        arContent.DisableARRayCastManager();
+        arComponents.DisableARPlaneManager();
+        arComponents.DisableARRayCastManager();
         
         finderTarget.Close();
+        changeAR3D.Open();
+        changeAR3D.ChangeEvent += OnChange;
+    }
+    
+    private void OnChange(bool state) {
+        arObject.SetState(state);
     }
     
     private void OnDestroy() => UnSubscribe();
@@ -42,6 +53,8 @@ public class Entry : MonoBehaviour {
     
     private void UnSubscribe() {
         main.UnSubscribe();
+        changeAR3D.UnSubscribe();
+        changeAR3D.ChangeEvent -= OnChange;
         finderTarget.UnSubscribe();
         finderTarget.SetPositionEvent -= SetPositionObject;
     }

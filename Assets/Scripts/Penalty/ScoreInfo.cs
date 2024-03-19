@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreInfo : ViewOperator<ScoreInfoView> {
     private int _currentScore;
     private int _bestScore;
-    private GameData _gameData = new();
+    [SerializeField] private GameData _gameData = new();
     
     public void Initialize() {
         _bestScore = _gameData.LoadBestScore();

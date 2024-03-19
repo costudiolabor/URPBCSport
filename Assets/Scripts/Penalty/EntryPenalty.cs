@@ -4,7 +4,7 @@ using UnityEngine.XR.ARFoundation;
 public class EntryPenalty : MonoBehaviour {
     [SerializeField] private Main main;
     [SerializeField] private ScoreInfo scoreInfo;
-    [SerializeField] private ARContent arContent;
+    [SerializeField] private ARComponents arComponents;
     [SerializeField] private FinderTarget finderTarget;
     [SerializeField] private Gate gate;
     
@@ -20,7 +20,7 @@ public class EntryPenalty : MonoBehaviour {
         scoreInfo.CreateView();
         scoreInfo.Initialize();
         
-        ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
+        ARRaycastManager arRaycastManager = arComponents.GetARRaycastManager();
         
         finderTarget.CreateView();
         finderTarget.SetRayCastManager(arRaycastManager);
@@ -36,8 +36,8 @@ public class EntryPenalty : MonoBehaviour {
         gate.Open();
         gate.SetPositionObject(position);
         
-        arContent.DisableARPlaneManager();
-        arContent.DisableARRayCastManager();
+        arComponents.DisableARPlaneManager();
+        arComponents.DisableARRayCastManager();
         finderTarget.Close();
         
         _kicker.Initialize();
