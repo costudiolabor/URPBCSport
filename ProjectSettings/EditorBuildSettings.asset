@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MenuFlatter.unity
     guid: b05a8e499e1064a4fb42afbefc6af0c4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuScene.unity
     guid: 795317d6a7bf17842b1b0f33b4f2ec9f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARBasketball.unity
     guid: c9728e3202f748a45b71fe9f8e2394fa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stadium.unity
     guid: 4b814f2f878b0724abae7df333a055fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR_Card_Player.unity
     guid: 82ad269afe7fea9408be03593a8b5e10
   - enabled: 1
@@ -26,14 +26,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Card_Player.unity
     guid: 06d1992d44ac78548bed4f4999783ab8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenePhoto.unity
     guid: 562e233ee348ba3498068f53ace6cc16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenePenalty.unity
     guid: 3aea64927208ced4ea142f08ffd8f650
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: fa54a67388d2142339d865709a8492d7,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 28ffd27bb6674417b884f23e7c786b8a,
       type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 94f51af5efe05be4281b851aa5bd5cb9,
       type: 2}
