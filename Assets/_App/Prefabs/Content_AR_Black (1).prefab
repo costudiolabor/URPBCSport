@@ -37207,7 +37207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5203602276216316601
 Transform:
   m_ObjectHideFlags: 0
@@ -37613,7 +37613,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -44154,6 +44154,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9201812154904093533, guid: dfffa47765bc76e4590b7bac4cf83054,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 836992c8cb812554cb70ae74902b6b7c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfffa47765bc76e4590b7bac4cf83054, type: 3}
 --- !u!4 &2868409272912983728 stripped
@@ -44244,6 +44249,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 9201812154904093533, guid: dfffa47765bc76e4590b7bac4cf83054,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 836992c8cb812554cb70ae74902b6b7c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfffa47765bc76e4590b7bac4cf83054, type: 3}
 --- !u!4 &2868409272929822648 stripped
@@ -44525,6 +44535,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 9201812154904093533, guid: dfffa47765bc76e4590b7bac4cf83054,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 836992c8cb812554cb70ae74902b6b7c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfffa47765bc76e4590b7bac4cf83054, type: 3}
 --- !u!4 &2868409272971271650 stripped

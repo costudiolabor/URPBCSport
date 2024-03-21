@@ -50,6 +50,8 @@ public class Hoarding_Advert_Controller : MonoBehaviour
 
         // set materials
         SetMaterial();
+
+        //Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame

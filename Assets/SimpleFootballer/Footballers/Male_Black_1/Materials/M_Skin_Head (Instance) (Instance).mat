@@ -391,7 +391,7 @@ Material:
     - _Roughness_Offset: 0.5
     - _SSS: 1
     - _Skin_Smoothness_Offset: 0.45146066
-    - _Skin_Tint_Alpha: 0.052584227
+    - _Skin_Tint_Alpha: 120.58
     - _Skin_Tint_Influence: 0.5
     - _Smoothness: 0.503
     - _SmoothnessRemapMax: 1
