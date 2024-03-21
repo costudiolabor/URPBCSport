@@ -176,6 +176,7 @@ MonoBehaviour:
   arComponents:
     arPlaneManager: {fileID: 979248426}
     arRaycastManager: {fileID: 979248425}
+    arCamera: {fileID: 954948567}
   finderTarget:
     prefab: {fileID: 9167741402605467508, guid: 496c8144b8fda534c95c245e6fe6cafa,
       type: 3}

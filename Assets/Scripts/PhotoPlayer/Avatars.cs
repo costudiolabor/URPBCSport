@@ -9,9 +9,17 @@ public class Avatars: ViewOperator<AvatarsView> {
     public void Initialize() {
         view.Initialize();
     }
-    public void SetPositionPlayer(Vector3 position) {
+    
+    public void SetPositionObject(Vector3 position, Transform target) {
         view.transform.position = position;
-        KickBall();
+        TurnOnTarget(target);
+        KickBall(); 
+    }
+
+    private void TurnOnTarget(Transform target) {
+        Transform viewTransform = view.transform;
+        viewTransform.LookAt(target);
+        viewTransform.eulerAngles = new Vector3(0, viewTransform.eulerAngles.y,0);
     }
     
     public void Idle() => view.Idle();

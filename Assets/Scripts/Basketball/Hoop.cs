@@ -16,7 +16,18 @@ public class Hoop : ViewOperator<HoopView> {
             view.ShowEffects();
             HitEvent?.Invoke();
     }
-    public void SetPositionObject(Vector3 position) { view.transform.position = position; }
+   
+    public void SetPositionObject(Vector3 position, Transform target) {
+        view.transform.position = position;
+        TurnOnTarget(target);
+    }
+
+    private void TurnOnTarget(Transform target) {
+        Transform viewTransform = view.transform;
+        viewTransform.LookAt(target);
+        viewTransform.eulerAngles = new Vector3(0, viewTransform.eulerAngles.y,0);
+    }
+    
     private void Subscribe() { view.RingEvent += OnRing; }  
     private void UnSubscribe() {
         view.RingEvent -= OnRing;

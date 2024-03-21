@@ -26,7 +26,8 @@ public class EntryStadium : MonoBehaviour {
     }
 
     private void SetPositionObject(Vector3 position) {
-        arObject.SetPositionPlayer(position);
+        Transform target = arComponents.GetMainCamera();
+        arObject.SetPositionObject(position, target);
         arObject.Open();
         
         arComponents.DisableARPlaneManager();

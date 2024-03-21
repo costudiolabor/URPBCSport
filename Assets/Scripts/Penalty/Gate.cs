@@ -15,9 +15,19 @@ public class Gate : ViewOperator<GateView> {
         spawnerBall.SetParentBall(_parentBall);
         Subscribe();
     }
-    public void SetPositionObject(Vector3 position) {
+    // public void SetPositionObject(Vector3 position) {
+    //     view.transform.position = position;
+    // }
+    
+    public void SetPositionObject(Vector3 position, Transform target) {
         view.transform.position = position;
-        Debug.Log("PositionObject " + position);
+        TurnOnTarget(target);
+    }
+
+    private void TurnOnTarget(Transform target) {
+        Transform viewTransform = view.transform;
+        viewTransform.LookAt(target);
+        viewTransform.eulerAngles = new Vector3(0, viewTransform.eulerAngles.y,0);
     }
 
     public Transform GetParentBall() => _parentBall;

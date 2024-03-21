@@ -134,12 +134,12 @@ PrefabInstance:
     - target: {fileID: 2857464299509861181, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.016748963
+      value: -0.01674896
       objectReference: {fileID: 0}
     - target: {fileID: 2857464299509861181, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.043427505
+      value: -0.043427497
       objectReference: {fileID: 0}
     - target: {fileID: 3848217051711640336, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
@@ -154,27 +154,47 @@ PrefabInstance:
     - target: {fileID: 5338841314558637096, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.008413985
+      value: 0.008413987
       objectReference: {fileID: 0}
     - target: {fileID: 5338841314558637096, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.12145629
+      value: -0.1214563
       objectReference: {fileID: 0}
     - target: {fileID: 5839961964947133476, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.01742722
+      value: 0.017427215
       objectReference: {fileID: 0}
     - target: {fileID: 5839961964947133476, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.108538456
+      value: 0.10853843
       objectReference: {fileID: 0}
     - target: {fileID: 6163349595401181458, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859108743450317138, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 7.479397e+30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859108743450317138, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 8.509e-42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859108743450317138, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859108743450317138, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 11650686
       objectReference: {fileID: 0}
     - target: {fileID: 9086611082608026896, guid: f4b1e78ad98e9eb4f8b8da63aeae6f97,
         type: 3}
@@ -413,12 +433,13 @@ MonoBehaviour:
   arComponents:
     arPlaneManager: {fileID: 5777023379510684967}
     arRaycastManager: {fileID: 5777023379510684966}
+    arCamera: {fileID: 5777023379272820403}
   finderTarget:
     prefab: {fileID: 9167741402605467508, guid: 496c8144b8fda534c95c245e6fe6cafa,
       type: 3}
     viewParent: {fileID: 0}
   arObject:
-    prefab: {fileID: 6247054176048405030, guid: c409f2816e44b3b4a9bbaeaf3ed70f03,
+    prefab: {fileID: -6807680568260916692, guid: 28d3dce02c1f5884e93bb66ad0088425,
       type: 3}
     viewParent: {fileID: 0}
 --- !u!4 &1349388121

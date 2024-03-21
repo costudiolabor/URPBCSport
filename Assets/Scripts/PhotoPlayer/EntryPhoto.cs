@@ -32,7 +32,8 @@ public class EntryPhoto : MonoBehaviour {
     }
 
     private void SetPositionObject(Vector3 position) {
-        avatars.SetPositionPlayer(position);
+        Transform target = arComponents.GetMainCamera();
+        avatars.SetPositionObject(position, target);
         avatars.Open();
         
         arComponents.DisableARPlaneManager();

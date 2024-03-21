@@ -32,8 +32,10 @@ public class EntryBasketball : MonoBehaviour {
     }
     
     private void SetPositionObject(Vector3 position) {
+        Transform target = arComponents.GetMainCamera();
         hoop.Open();
-        hoop.SetPositionObject(position);
+        hoop.SetPositionObject(position, target);
+        
         arComponents.DisableARPlaneManager();
         arComponents.DisableARRayCastManager();
         finderTarget.Close();

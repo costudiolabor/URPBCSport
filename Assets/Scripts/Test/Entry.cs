@@ -30,7 +30,9 @@ public class Entry : MonoBehaviour {
     }
 
     private void SetPositionObject(Vector3 position) {
-        arObject.SetPositionPlayer(position);
+        Transform target = arComponents.GetMainCamera();
+        arObject.SetPositionObject(position, target);
+        //arObject.SetPositionObject(position);
         arObject.Open();
         
         arComponents.DisableARPlaneManager();

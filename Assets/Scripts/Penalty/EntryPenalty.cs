@@ -33,8 +33,10 @@ public class EntryPenalty : MonoBehaviour {
     }
 
     private void SetPositionObject(Vector3 position) {
+        Transform target = arComponents.GetMainCamera();
         gate.Open();
-        gate.SetPositionObject(position);
+        gate.SetPositionObject(position, target);
+        //gate.SetPositionObject(position);
         
         arComponents.DisableARPlaneManager();
         arComponents.DisableARRayCastManager();

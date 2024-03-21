@@ -445,12 +445,13 @@ MonoBehaviour:
   arComponents:
     arPlaneManager: {fileID: 1556082236}
     arRaycastManager: {fileID: 1556082234}
+    arCamera: {fileID: 1052573939}
   finderTarget:
     prefab: {fileID: 9167741402605467508, guid: 496c8144b8fda534c95c245e6fe6cafa,
       type: 3}
     viewParent: {fileID: 0}
   gate:
-    prefab: {fileID: 9068151222184147468, guid: 1671ff23206c12642af29427dfaf46a1,
+    prefab: {fileID: 7492075764537212685, guid: 77617a47ef97f9440a3a928a9005013f,
       type: 3}
     viewParent: {fileID: 0}
     spawnerBall:
