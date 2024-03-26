@@ -26,6 +26,7 @@ public class Hoarding_Advert_Controller : MonoBehaviour
     public string boardPhase;                                           // type of board this script is attached to (in/out)
 
     // board configuration
+    [SerializeField] private int countBoards = 1;
 
     public int boardNumber;                                             // the number of this board in the scene (1-16)
 
@@ -82,9 +83,15 @@ public class Hoarding_Advert_Controller : MonoBehaviour
                 }
 
                 // wrap value if necessary
-                if (adForThisHoarding > 15)
+                // if (adForThisHoarding > 15)
+                // {
+                //     adForThisHoarding -= 16;
+                // }
+                
+               // Debug.Log("adForThisHoarding " + adForThisHoarding);
+                if (adForThisHoarding > countBoards)
                 {
-                    adForThisHoarding -= 16;
+                    adForThisHoarding -= (countBoards + 1);
                 }
 
                 newAdIndex = _hoardingAdList[adForThisHoarding];
