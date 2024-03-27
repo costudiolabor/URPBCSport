@@ -141,12 +141,12 @@ GameObject:
   - component: {fileID: 7840597469904035036}
   - component: {fileID: 4360497259193956489}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5984589014557292513
 RectTransform:
   m_ObjectHideFlags: 0

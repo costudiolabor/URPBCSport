@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,7 +20,8 @@ public class Menu : MonoBehaviour {
     [SerializeField] private int scenePhoto;
     [SerializeField] private int scenePenalty;
     
-    private void Awake() {
+    private void Start()
+    {
         buttonPhoto.onClick.AddListener(OnPhoto);
         buttonBasketball.onClick.AddListener(OnBasketball);
         buttonPenalty.onClick.AddListener(OnPenalty);
@@ -55,5 +57,10 @@ public class Menu : MonoBehaviour {
     
     private void OnStadium() {
         SceneManager.LoadScene(sceneStadium);
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

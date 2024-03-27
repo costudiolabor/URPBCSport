@@ -951,7 +951,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.33508235, b: 0.6886792, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2237,6 +2237,7 @@ MonoBehaviour:
       type: 3}
     viewParent: {fileID: 414073916}
     sceneMenu: 0
+    sceneNameMenu: Menu
   scoreInfo:
     prefab: {fileID: 469029464714219815, guid: 591959a1a441b00499934c40717e3301, type: 3}
     viewParent: {fileID: 414073915}

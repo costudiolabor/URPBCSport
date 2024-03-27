@@ -2049,6 +2049,7 @@ MonoBehaviour:
       type: 3}
     viewParent: {fileID: 184492451}
     sceneMenu: 0
+    sceneNameMenu: Menu
   changeAR3D:
     prefab: {fileID: 7645541283458543617, guid: 9b0ffccfdb9a039429e3124f065d9b50,
       type: 3}
@@ -3772,7 +3773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &608880894640301595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94234,12 +94235,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4387494881281627337}
   m_Layer: 0
-  m_Name: StadiumCardPlayerBlack
+  m_Name: StadiumCardPlayer_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8628890682415809971
 Transform:
   m_ObjectHideFlags: 0
